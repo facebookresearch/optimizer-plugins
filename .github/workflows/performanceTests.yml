@@ -1,0 +1,30 @@
+name: Performance Tests
+on:
+  schedule:
+    - cron:  '30 23 * * *'
+jobs:
+  testPublish:
+    runs-on: macos-latest
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: set up jdk 11
+        uses: actions/setup-java@v2
+        with:
+          java-version: '8'
+          distribution: 'adopt'
+      - name: install diffkt dependencies
+        run: |
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          brew install onednn
+          brew install libomp
+      - uses: actions/checkout@v2
+      - name: client performance tests
+        run: |
+          ./gradlew publishToMavenLocal
+          pushd adOptimizeClient
+          ./gradlew test
+          popd
+        env:
+          GITHUB_TOKEN: ${{ secrets.FBTOKEN }}

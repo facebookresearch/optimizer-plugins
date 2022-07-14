@@ -1,0 +1,1189 @@
+FILE fqName:demo fileName:/api.kt
+  CLASS ANNOTATION_CLASS name:ReverseDifferentiable modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ReverseDifferentiable
+    CONSTRUCTOR visibility:public <> (primalField:kotlin.String, upstreamField:kotlin.String, backpropogateMethod:kotlin.String, pushbackMethod:kotlin.String, derivativeID:kotlin.String) returnType:demo.ReverseDifferentiable [primary]
+      VALUE_PARAMETER name:primalField index:0 type:kotlin.String
+      VALUE_PARAMETER name:upstreamField index:1 type:kotlin.String
+      VALUE_PARAMETER name:backpropogateMethod index:2 type:kotlin.String
+      VALUE_PARAMETER name:pushbackMethod index:3 type:kotlin.String
+      VALUE_PARAMETER name:derivativeID index:4 type:kotlin.String
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:ReverseDifferentiable modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    PROPERTY name:primalField visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:primalField type:kotlin.String visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'primalField: kotlin.String declared in demo.ReverseDifferentiable.<init>' type=kotlin.String origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-primalField> visibility:public modality:FINAL <> ($this:demo.ReverseDifferentiable) returnType:kotlin.String
+        correspondingProperty: PROPERTY name:primalField visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.ReverseDifferentiable
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-primalField> (): kotlin.String declared in demo.ReverseDifferentiable'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:primalField type:kotlin.String visibility:private [final]' type=kotlin.String origin=null
+              receiver: GET_VAR '<this>: demo.ReverseDifferentiable declared in demo.ReverseDifferentiable.<get-primalField>' type=demo.ReverseDifferentiable origin=null
+    PROPERTY name:upstreamField visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:upstreamField type:kotlin.String visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'upstreamField: kotlin.String declared in demo.ReverseDifferentiable.<init>' type=kotlin.String origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-upstreamField> visibility:public modality:FINAL <> ($this:demo.ReverseDifferentiable) returnType:kotlin.String
+        correspondingProperty: PROPERTY name:upstreamField visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.ReverseDifferentiable
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-upstreamField> (): kotlin.String declared in demo.ReverseDifferentiable'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:upstreamField type:kotlin.String visibility:private [final]' type=kotlin.String origin=null
+              receiver: GET_VAR '<this>: demo.ReverseDifferentiable declared in demo.ReverseDifferentiable.<get-upstreamField>' type=demo.ReverseDifferentiable origin=null
+    PROPERTY name:backpropogateMethod visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:backpropogateMethod type:kotlin.String visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'backpropogateMethod: kotlin.String declared in demo.ReverseDifferentiable.<init>' type=kotlin.String origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-backpropogateMethod> visibility:public modality:FINAL <> ($this:demo.ReverseDifferentiable) returnType:kotlin.String
+        correspondingProperty: PROPERTY name:backpropogateMethod visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.ReverseDifferentiable
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-backpropogateMethod> (): kotlin.String declared in demo.ReverseDifferentiable'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:backpropogateMethod type:kotlin.String visibility:private [final]' type=kotlin.String origin=null
+              receiver: GET_VAR '<this>: demo.ReverseDifferentiable declared in demo.ReverseDifferentiable.<get-backpropogateMethod>' type=demo.ReverseDifferentiable origin=null
+    PROPERTY name:pushbackMethod visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:pushbackMethod type:kotlin.String visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'pushbackMethod: kotlin.String declared in demo.ReverseDifferentiable.<init>' type=kotlin.String origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-pushbackMethod> visibility:public modality:FINAL <> ($this:demo.ReverseDifferentiable) returnType:kotlin.String
+        correspondingProperty: PROPERTY name:pushbackMethod visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.ReverseDifferentiable
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-pushbackMethod> (): kotlin.String declared in demo.ReverseDifferentiable'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:pushbackMethod type:kotlin.String visibility:private [final]' type=kotlin.String origin=null
+              receiver: GET_VAR '<this>: demo.ReverseDifferentiable declared in demo.ReverseDifferentiable.<get-pushbackMethod>' type=demo.ReverseDifferentiable origin=null
+    PROPERTY name:derivativeID visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:derivativeID type:kotlin.String visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'derivativeID: kotlin.String declared in demo.ReverseDifferentiable.<init>' type=kotlin.String origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-derivativeID> visibility:public modality:FINAL <> ($this:demo.ReverseDifferentiable) returnType:kotlin.String
+        correspondingProperty: PROPERTY name:derivativeID visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.ReverseDifferentiable
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-derivativeID> (): kotlin.String declared in demo.ReverseDifferentiable'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:derivativeID type:kotlin.String visibility:private [final]' type=kotlin.String origin=null
+              receiver: GET_VAR '<this>: demo.ReverseDifferentiable declared in demo.ReverseDifferentiable.<get-derivativeID>' type=demo.ReverseDifferentiable origin=null
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:ScalarRoot modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ScalarRoot
+    CONSTRUCTOR visibility:public <> () returnType:demo.ScalarRoot [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:ScalarRoot modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:PrimalAndPullback modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.PrimalAndPullback
+    CONSTRUCTOR visibility:public <> () returnType:demo.PrimalAndPullback [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:PrimalAndPullback modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:StackImpl modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.StackImpl
+    CONSTRUCTOR visibility:public <> () returnType:demo.StackImpl [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:StackImpl modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:BoxedPrimitive modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.BoxedPrimitive
+    CONSTRUCTOR visibility:public <> (valueField:kotlin.String) returnType:demo.BoxedPrimitive [primary]
+      VALUE_PARAMETER name:valueField index:0 type:kotlin.String
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:BoxedPrimitive modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    PROPERTY name:valueField visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:valueField type:kotlin.String visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'valueField: kotlin.String declared in demo.BoxedPrimitive.<init>' type=kotlin.String origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-valueField> visibility:public modality:FINAL <> ($this:demo.BoxedPrimitive) returnType:kotlin.String
+        correspondingProperty: PROPERTY name:valueField visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.BoxedPrimitive
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-valueField> (): kotlin.String declared in demo.BoxedPrimitive'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:valueField type:kotlin.String visibility:private [final]' type=kotlin.String origin=null
+              receiver: GET_VAR '<this>: demo.BoxedPrimitive declared in demo.BoxedPrimitive.<get-valueField>' type=demo.BoxedPrimitive origin=null
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:ToUnboxedFunction modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ToUnboxedFunction
+    CONSTRUCTOR visibility:public <> (functionName:kotlin.String) returnType:demo.ToUnboxedFunction [primary]
+      VALUE_PARAMETER name:functionName index:0 type:kotlin.String
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:ToUnboxedFunction modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    PROPERTY name:functionName visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:functionName type:kotlin.String visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'functionName: kotlin.String declared in demo.ToUnboxedFunction.<init>' type=kotlin.String origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-functionName> visibility:public modality:FINAL <> ($this:demo.ToUnboxedFunction) returnType:kotlin.String
+        correspondingProperty: PROPERTY name:functionName visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.ToUnboxedFunction
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-functionName> (): kotlin.String declared in demo.ToUnboxedFunction'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:functionName type:kotlin.String visibility:private [final]' type=kotlin.String origin=null
+              receiver: GET_VAR '<this>: demo.ToUnboxedFunction declared in demo.ToUnboxedFunction.<get-functionName>' type=demo.ToUnboxedFunction origin=null
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:DTensorRoot modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.DTensorRoot
+    CONSTRUCTOR visibility:public <> () returnType:demo.DTensorRoot [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:DTensorRoot modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:ToReverse modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ToReverse
+    CONSTRUCTOR visibility:public <> (fqClass:kotlin.String) returnType:demo.ToReverse [primary]
+      VALUE_PARAMETER name:fqClass index:0 type:kotlin.String
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:ToReverse modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    PROPERTY name:fqClass visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:fqClass type:kotlin.String visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'fqClass: kotlin.String declared in demo.ToReverse.<init>' type=kotlin.String origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-fqClass> visibility:public modality:FINAL <> ($this:demo.ToReverse) returnType:kotlin.String
+        correspondingProperty: PROPERTY name:fqClass visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.ToReverse
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-fqClass> (): kotlin.String declared in demo.ToReverse'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:fqClass type:kotlin.String visibility:private [final]' type=kotlin.String origin=null
+              receiver: GET_VAR '<this>: demo.ToReverse declared in demo.ToReverse.<get-fqClass>' type=demo.ToReverse origin=null
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:ReverseOperations modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ReverseOperations
+    CONSTRUCTOR visibility:public <> () returnType:demo.ReverseOperations [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:ReverseOperations modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:ScalarNoop modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ScalarNoop
+    CONSTRUCTOR visibility:public <> () returnType:demo.ScalarNoop [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:ScalarNoop modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:ForwardDifferentiable modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ForwardDifferentiable
+    CONSTRUCTOR visibility:public <> (tangentProperty:kotlin.String) returnType:demo.ForwardDifferentiable [primary]
+      VALUE_PARAMETER name:tangentProperty index:0 type:kotlin.String
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:ForwardDifferentiable modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    PROPERTY name:tangentProperty visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:tangentProperty type:kotlin.String visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'tangentProperty: kotlin.String declared in demo.ForwardDifferentiable.<init>' type=kotlin.String origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-tangentProperty> visibility:public modality:FINAL <> ($this:demo.ForwardDifferentiable) returnType:kotlin.String
+        correspondingProperty: PROPERTY name:tangentProperty visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.ForwardDifferentiable
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-tangentProperty> (): kotlin.String declared in demo.ForwardDifferentiable'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:tangentProperty type:kotlin.String visibility:private [final]' type=kotlin.String origin=null
+              receiver: GET_VAR '<this>: demo.ForwardDifferentiable declared in demo.ForwardDifferentiable.<get-tangentProperty>' type=demo.ForwardDifferentiable origin=null
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS INTERFACE name:DiffTensor modality:ABSTRACT visibility:public superTypes:[kotlin.Any]
+    annotations:
+      DTensorRoot
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.DiffTensor
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [operator] declared in kotlin.Any
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int declared in kotlin.Any
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String declared in kotlin.Any
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  FUN name:plus visibility:public modality:FINAL <> ($receiver:demo.DiffTensor, other:demo.DiffTensor) returnType:demo.DiffTensor [operator]
+    $receiver: VALUE_PARAMETER name:<this> type:demo.DiffTensor
+    VALUE_PARAMETER name:other index:0 type:demo.DiffTensor
+    BLOCK_BODY
+      CALL 'public final fun TODO (): kotlin.Nothing [inline] declared in kotlin.StandardKt' type=kotlin.Nothing origin=null
+  CLASS CLASS name:DerivativeID modality:OPEN visibility:public superTypes:[kotlin.Comparable<demo.DerivativeID>]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.DerivativeID
+    CONSTRUCTOR visibility:public <> (seq:kotlin.Int) returnType:demo.DerivativeID [primary]
+      VALUE_PARAMETER name:seq index:0 type:kotlin.Int
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:DerivativeID modality:OPEN visibility:public superTypes:[kotlin.Comparable<demo.DerivativeID>]'
+    PROPERTY name:seq visibility:private modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:seq type:kotlin.Int visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'seq: kotlin.Int declared in demo.DerivativeID.<init>' type=kotlin.Int origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-seq> visibility:private modality:FINAL <> ($this:demo.DerivativeID) returnType:kotlin.Int
+        correspondingProperty: PROPERTY name:seq visibility:private modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.DerivativeID
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='private final fun <get-seq> (): kotlin.Int declared in demo.DerivativeID'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:seq type:kotlin.Int visibility:private [final]' type=kotlin.Int origin=null
+              receiver: GET_VAR '<this>: demo.DerivativeID declared in demo.DerivativeID.<get-seq>' type=demo.DerivativeID origin=null
+    FUN name:compareTo visibility:public modality:OPEN <> ($this:demo.DerivativeID, other:demo.DerivativeID) returnType:kotlin.Int [operator]
+      overridden:
+        public abstract fun compareTo (other: T of kotlin.Comparable): kotlin.Int [operator] declared in kotlin.Comparable
+      $this: VALUE_PARAMETER name:<this> type:demo.DerivativeID
+      VALUE_PARAMETER name:other index:0 type:demo.DerivativeID
+      BLOCK_BODY
+        RETURN type=kotlin.Nothing from='public open fun compareTo (other: demo.DerivativeID): kotlin.Int [operator] declared in demo.DerivativeID'
+          CALL 'public open fun compareTo (other: kotlin.Int): kotlin.Int [operator] declared in kotlin.Int' type=kotlin.Int origin=null
+            $this: CALL 'private final fun <get-seq> (): kotlin.Int declared in demo.DerivativeID' type=kotlin.Int origin=GET_PROPERTY
+              $this: GET_VAR '<this>: demo.DerivativeID declared in demo.DerivativeID.compareTo' type=demo.DerivativeID origin=null
+            other: CALL 'private final fun <get-seq> (): kotlin.Int declared in demo.DerivativeID' type=kotlin.Int origin=GET_PROPERTY
+              $this: GET_VAR 'other: demo.DerivativeID declared in demo.DerivativeID.compareTo' type=demo.DerivativeID origin=null
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Comparable
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Comparable
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Comparable
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS CLASS name:ReverseDerivativeID modality:FINAL visibility:public superTypes:[demo.DerivativeID]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ReverseDerivativeID
+    CONSTRUCTOR visibility:public <> (s:kotlin.Int) returnType:demo.ReverseDerivativeID [primary]
+      VALUE_PARAMETER name:s index:0 type:kotlin.Int
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> (seq: kotlin.Int) [primary] declared in demo.DerivativeID'
+          seq: GET_VAR 's: kotlin.Int declared in demo.ReverseDerivativeID.<init>' type=kotlin.Int origin=null
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:ReverseDerivativeID modality:FINAL visibility:public superTypes:[demo.DerivativeID]'
+    PROPERTY name:backpropogateWorkList visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:backpropogateWorkList type:java.util.Stack<demo.DifferentiableDouble> visibility:private [final]
+        EXPRESSION_BODY
+          CONSTRUCTOR_CALL 'public constructor <init> () declared in java.util.Stack' type=java.util.Stack<demo.DifferentiableDouble> origin=null
+            <class: E>: demo.DifferentiableDouble
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-backpropogateWorkList> visibility:public modality:FINAL <> ($this:demo.ReverseDerivativeID) returnType:java.util.Stack<demo.DifferentiableDouble>
+        correspondingProperty: PROPERTY name:backpropogateWorkList visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.ReverseDerivativeID
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-backpropogateWorkList> (): java.util.Stack<demo.DifferentiableDouble> declared in demo.ReverseDerivativeID'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:backpropogateWorkList type:java.util.Stack<demo.DifferentiableDouble> visibility:private [final]' type=java.util.Stack<demo.DifferentiableDouble> origin=null
+              receiver: GET_VAR '<this>: demo.ReverseDerivativeID declared in demo.ReverseDerivativeID.<get-backpropogateWorkList>' type=demo.ReverseDerivativeID origin=null
+    FUN FAKE_OVERRIDE name:compareTo visibility:public modality:OPEN <> ($this:demo.DerivativeID, other:demo.DerivativeID) returnType:kotlin.Int [fake_override,operator]
+      overridden:
+        public open fun compareTo (other: demo.DerivativeID): kotlin.Int [operator] declared in demo.DerivativeID
+      $this: VALUE_PARAMETER name:<this> type:demo.DerivativeID
+      VALUE_PARAMETER name:other index:0 type:demo.DerivativeID
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in demo.DerivativeID
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in demo.DerivativeID
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in demo.DerivativeID
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  PROPERTY name:zeroDerivativeID visibility:public modality:FINAL [val]
+    FIELD PROPERTY_BACKING_FIELD name:zeroDerivativeID type:demo.DerivativeID visibility:private [final,static]
+      EXPRESSION_BODY
+        CONSTRUCTOR_CALL 'public constructor <init> (seq: kotlin.Int) [primary] declared in demo.DerivativeID' type=demo.DerivativeID origin=null
+          seq: CONST Int type=kotlin.Int value=0
+    FUN DEFAULT_PROPERTY_ACCESSOR name:<get-zeroDerivativeID> visibility:public modality:FINAL <> () returnType:demo.DerivativeID
+      correspondingProperty: PROPERTY name:zeroDerivativeID visibility:public modality:FINAL [val]
+      BLOCK_BODY
+        RETURN type=kotlin.Nothing from='public final fun <get-zeroDerivativeID> (): demo.DerivativeID declared in demo'
+          GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:zeroDerivativeID type:demo.DerivativeID visibility:private [final,static]' type=demo.DerivativeID origin=null
+  CLASS CLASS name:DifferentiableDouble modality:SEALED visibility:public superTypes:[demo.DiffTensor]
+    annotations:
+      ScalarRoot
+    sealedSubclasses:
+      CLASS CLASS name:DDouble modality:FINAL visibility:public superTypes:[demo.DifferentiableDouble]
+      CLASS CLASS name:ReverseNode modality:ABSTRACT visibility:public superTypes:[demo.DifferentiableDouble]
+      CLASS CLASS name:ForwardNode modality:FINAL visibility:public superTypes:[demo.DifferentiableDouble]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.DifferentiableDouble
+    CONSTRUCTOR visibility:protected <> () returnType:demo.DifferentiableDouble [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:DifferentiableDouble modality:SEALED visibility:public superTypes:[demo.DiffTensor]'
+    PROPERTY name:primal visibility:public modality:ABSTRACT [val]
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-primal> visibility:public modality:ABSTRACT <> ($this:demo.DifferentiableDouble) returnType:demo.DifferentiableDouble
+        correspondingProperty: PROPERTY name:primal visibility:public modality:ABSTRACT [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    FUN name:value visibility:public modality:OPEN <> ($this:demo.DifferentiableDouble) returnType:kotlin.Double
+      $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+      BLOCK_BODY
+        RETURN type=kotlin.Nothing from='public open fun value (): kotlin.Double declared in demo.DifferentiableDouble'
+          CALL 'public open fun value (): kotlin.Double declared in demo.DifferentiableDouble' type=kotlin.Double origin=null
+            $this: CALL 'public abstract fun <get-primal> (): demo.DifferentiableDouble declared in demo.DifferentiableDouble' type=demo.DifferentiableDouble origin=GET_PROPERTY
+              $this: GET_VAR '<this>: demo.DifferentiableDouble declared in demo.DifferentiableDouble.value' type=demo.DifferentiableDouble origin=null
+    PROPERTY name:derivativeID visibility:public modality:ABSTRACT [val]
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-derivativeID> visibility:public modality:ABSTRACT <> ($this:demo.DifferentiableDouble) returnType:demo.DerivativeID
+        correspondingProperty: PROPERTY name:derivativeID visibility:public modality:ABSTRACT [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    FUN name:zero visibility:public modality:FINAL <> ($this:demo.DifferentiableDouble) returnType:demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+      BLOCK_BODY
+        RETURN type=kotlin.Nothing from='public final fun zero (): demo.DifferentiableDouble declared in demo.DifferentiableDouble'
+          CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Double) [primary] declared in demo.DDouble' type=demo.DDouble origin=null
+            value: CONST Double type=kotlin.Double value=0.0
+    FUN name:one visibility:public modality:FINAL <> ($this:demo.DifferentiableDouble) returnType:demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+      BLOCK_BODY
+        RETURN type=kotlin.Nothing from='public final fun one (): demo.DifferentiableDouble declared in demo.DifferentiableDouble'
+          CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Double) [primary] declared in demo.DDouble' type=demo.DDouble origin=null
+            value: CONST Double type=kotlin.Double value=1.0
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in demo.DiffTensor
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in demo.DiffTensor
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in demo.DiffTensor
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS CLASS name:DDouble modality:FINAL visibility:public superTypes:[demo.DifferentiableDouble]
+    annotations:
+      BoxedPrimitive(valueField = 'value')
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.DDouble
+    CONSTRUCTOR visibility:public <> (value:kotlin.Double) returnType:demo.DDouble [primary]
+      VALUE_PARAMETER name:value index:0 type:kotlin.Double
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'protected constructor <init> () [primary] declared in demo.DifferentiableDouble'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:DDouble modality:FINAL visibility:public superTypes:[demo.DifferentiableDouble]'
+    PROPERTY name:value visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:value type:kotlin.Double visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'value: kotlin.Double declared in demo.DDouble.<init>' type=kotlin.Double origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-value> visibility:public modality:FINAL <> ($this:demo.DDouble) returnType:kotlin.Double
+        correspondingProperty: PROPERTY name:value visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.DDouble
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-value> (): kotlin.Double declared in demo.DDouble'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:value type:kotlin.Double visibility:private [final]' type=kotlin.Double origin=null
+              receiver: GET_VAR '<this>: demo.DDouble declared in demo.DDouble.<get-value>' type=demo.DDouble origin=null
+    PROPERTY name:derivativeID visibility:public modality:OPEN [val]
+      overridden:
+        public abstract derivativeID: demo.DerivativeID [val]
+      FIELD PROPERTY_BACKING_FIELD name:derivativeID type:demo.DerivativeID visibility:private [final]
+        EXPRESSION_BODY
+          CALL 'public final fun <get-zeroDerivativeID> (): demo.DerivativeID declared in demo' type=demo.DerivativeID origin=GET_PROPERTY
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-derivativeID> visibility:public modality:OPEN <> ($this:demo.DDouble) returnType:demo.DerivativeID
+        correspondingProperty: PROPERTY name:derivativeID visibility:public modality:OPEN [val]
+        overridden:
+          public abstract fun <get-derivativeID> (): demo.DerivativeID declared in demo.DifferentiableDouble
+        $this: VALUE_PARAMETER name:<this> type:demo.DDouble
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public open fun <get-derivativeID> (): demo.DerivativeID declared in demo.DDouble'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:derivativeID type:demo.DerivativeID visibility:private [final]' type=demo.DerivativeID origin=null
+              receiver: GET_VAR '<this>: demo.DDouble declared in demo.DDouble.<get-derivativeID>' type=demo.DDouble origin=null
+    PROPERTY name:primal visibility:public modality:OPEN [val]
+      overridden:
+        public abstract primal: demo.DifferentiableDouble [val]
+      FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR '<this>: demo.DDouble declared in demo.DDouble' type=demo.DDouble origin=null
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-primal> visibility:public modality:OPEN <> ($this:demo.DDouble) returnType:demo.DifferentiableDouble
+        correspondingProperty: PROPERTY name:primal visibility:public modality:OPEN [val]
+        overridden:
+          public abstract fun <get-primal> (): demo.DifferentiableDouble declared in demo.DifferentiableDouble
+        $this: VALUE_PARAMETER name:<this> type:demo.DDouble
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public open fun <get-primal> (): demo.DifferentiableDouble declared in demo.DDouble'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]' type=demo.DifferentiableDouble origin=null
+              receiver: GET_VAR '<this>: demo.DDouble declared in demo.DDouble.<get-primal>' type=demo.DDouble origin=null
+    FUN name:value visibility:public modality:OPEN <> ($this:demo.DDouble) returnType:kotlin.Double
+      overridden:
+        public open fun value (): kotlin.Double declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.DDouble
+      BLOCK_BODY
+        RETURN type=kotlin.Nothing from='public open fun value (): kotlin.Double declared in demo.DDouble'
+          CALL 'public final fun <get-value> (): kotlin.Double declared in demo.DDouble' type=kotlin.Double origin=GET_PROPERTY
+            $this: GET_VAR '<this>: demo.DDouble declared in demo.DDouble.value' type=demo.DDouble origin=null
+    CLASS OBJECT name:Companion modality:FINAL visibility:public [companion] superTypes:[kotlin.Any]
+      $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.DDouble.Companion
+      CONSTRUCTOR visibility:private <> () returnType:demo.DDouble.Companion [primary]
+        BLOCK_BODY
+          DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+          INSTANCE_INITIALIZER_CALL classDescriptor='CLASS OBJECT name:Companion modality:FINAL visibility:public [companion] superTypes:[kotlin.Any]'
+      PROPERTY name:ZERO visibility:public modality:FINAL [val]
+        FIELD PROPERTY_BACKING_FIELD name:ZERO type:demo.DDouble visibility:private [final]
+          EXPRESSION_BODY
+            CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Double) [primary] declared in demo.DDouble' type=demo.DDouble origin=null
+              value: CONST Double type=kotlin.Double value=0.0
+        FUN DEFAULT_PROPERTY_ACCESSOR name:<get-ZERO> visibility:public modality:FINAL <> ($this:demo.DDouble.Companion) returnType:demo.DDouble
+          correspondingProperty: PROPERTY name:ZERO visibility:public modality:FINAL [val]
+          $this: VALUE_PARAMETER name:<this> type:demo.DDouble.Companion
+          BLOCK_BODY
+            RETURN type=kotlin.Nothing from='public final fun <get-ZERO> (): demo.DDouble declared in demo.DDouble.Companion'
+              GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:ZERO type:demo.DDouble visibility:private [final]' type=demo.DDouble origin=null
+                receiver: GET_VAR '<this>: demo.DDouble.Companion declared in demo.DDouble.Companion.<get-ZERO>' type=demo.DDouble.Companion origin=null
+      PROPERTY name:ONE visibility:public modality:FINAL [val]
+        FIELD PROPERTY_BACKING_FIELD name:ONE type:demo.DDouble visibility:private [final]
+          EXPRESSION_BODY
+            CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Double) [primary] declared in demo.DDouble' type=demo.DDouble origin=null
+              value: CONST Double type=kotlin.Double value=1.0
+        FUN DEFAULT_PROPERTY_ACCESSOR name:<get-ONE> visibility:public modality:FINAL <> ($this:demo.DDouble.Companion) returnType:demo.DDouble
+          correspondingProperty: PROPERTY name:ONE visibility:public modality:FINAL [val]
+          $this: VALUE_PARAMETER name:<this> type:demo.DDouble.Companion
+          BLOCK_BODY
+            RETURN type=kotlin.Nothing from='public final fun <get-ONE> (): demo.DDouble declared in demo.DDouble.Companion'
+              GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:ONE type:demo.DDouble visibility:private [final]' type=demo.DDouble origin=null
+                receiver: GET_VAR '<this>: demo.DDouble.Companion declared in demo.DDouble.Companion.<get-ONE>' type=demo.DDouble.Companion origin=null
+      FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+        overridden:
+          public open fun equals (other: kotlin.Any?): kotlin.Boolean [operator] declared in kotlin.Any
+        $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+        VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+      FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+        overridden:
+          public open fun hashCode (): kotlin.Int declared in kotlin.Any
+        $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+        overridden:
+          public open fun toString (): kotlin.String declared in kotlin.Any
+        $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:zero visibility:public modality:FINAL <> ($this:demo.DifferentiableDouble) returnType:demo.DifferentiableDouble [fake_override]
+      overridden:
+        public final fun zero (): demo.DifferentiableDouble declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    FUN FAKE_OVERRIDE name:one visibility:public modality:FINAL <> ($this:demo.DifferentiableDouble) returnType:demo.DifferentiableDouble [fake_override]
+      overridden:
+        public final fun one (): demo.DifferentiableDouble declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS CLASS name:ReverseNode modality:ABSTRACT visibility:public superTypes:[demo.DifferentiableDouble]
+    annotations:
+      ReverseDifferentiable(primalField = 'primal', upstreamField = 'upstream', backpropogateMethod = 'backpropogate', pushbackMethod = 'pushback', derivativeID = 'derivativeID')
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ReverseNode
+    CONSTRUCTOR visibility:public <> (d:demo.ReverseDerivativeID) returnType:demo.ReverseNode [primary]
+      VALUE_PARAMETER name:d index:0 type:demo.ReverseDerivativeID
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'protected constructor <init> () [primary] declared in demo.DifferentiableDouble'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:ReverseNode modality:ABSTRACT visibility:public superTypes:[demo.DifferentiableDouble]'
+    PROPERTY name:upstream visibility:public modality:FINAL [var]
+      FIELD PROPERTY_BACKING_FIELD name:upstream type:demo.DifferentiableDouble visibility:private
+        EXPRESSION_BODY
+          CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Double) [primary] declared in demo.DDouble' type=demo.DDouble origin=null
+            value: CONST Double type=kotlin.Double value=0.0
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-upstream> visibility:public modality:FINAL <> ($this:demo.ReverseNode) returnType:demo.DifferentiableDouble
+        correspondingProperty: PROPERTY name:upstream visibility:public modality:FINAL [var]
+        $this: VALUE_PARAMETER name:<this> type:demo.ReverseNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-upstream> (): demo.DifferentiableDouble declared in demo.ReverseNode'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:upstream type:demo.DifferentiableDouble visibility:private' type=demo.DifferentiableDouble origin=null
+              receiver: GET_VAR '<this>: demo.ReverseNode declared in demo.ReverseNode.<get-upstream>' type=demo.ReverseNode origin=null
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<set-upstream> visibility:public modality:FINAL <> ($this:demo.ReverseNode, <set-?>:demo.DifferentiableDouble) returnType:kotlin.Unit
+        correspondingProperty: PROPERTY name:upstream visibility:public modality:FINAL [var]
+        $this: VALUE_PARAMETER name:<this> type:demo.ReverseNode
+        VALUE_PARAMETER name:<set-?> index:0 type:demo.DifferentiableDouble
+        BLOCK_BODY
+          SET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:upstream type:demo.DifferentiableDouble visibility:private' type=kotlin.Unit origin=null
+            receiver: GET_VAR '<this>: demo.ReverseNode declared in demo.ReverseNode.<set-upstream>' type=demo.ReverseNode origin=null
+            value: GET_VAR '<set-?>: demo.DifferentiableDouble declared in demo.ReverseNode.<set-upstream>' type=demo.DifferentiableDouble origin=null
+    PROPERTY name:derivativeID visibility:public modality:OPEN [val]
+      overridden:
+        public abstract derivativeID: demo.DerivativeID [val]
+      FIELD PROPERTY_BACKING_FIELD name:derivativeID type:demo.ReverseDerivativeID visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'd: demo.ReverseDerivativeID declared in demo.ReverseNode.<init>' type=demo.ReverseDerivativeID origin=null
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-derivativeID> visibility:public modality:OPEN <> ($this:demo.ReverseNode) returnType:demo.ReverseDerivativeID
+        correspondingProperty: PROPERTY name:derivativeID visibility:public modality:OPEN [val]
+        overridden:
+          public abstract fun <get-derivativeID> (): demo.DerivativeID declared in demo.DifferentiableDouble
+        $this: VALUE_PARAMETER name:<this> type:demo.ReverseNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public open fun <get-derivativeID> (): demo.ReverseDerivativeID declared in demo.ReverseNode'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:derivativeID type:demo.ReverseDerivativeID visibility:private [final]' type=demo.ReverseDerivativeID origin=null
+              receiver: GET_VAR '<this>: demo.ReverseNode declared in demo.ReverseNode.<get-derivativeID>' type=demo.ReverseNode origin=null
+    FUN name:backpropogate visibility:public modality:ABSTRACT <> ($this:demo.ReverseNode) returnType:kotlin.Unit
+      $this: VALUE_PARAMETER name:<this> type:demo.ReverseNode
+    PROPERTY name:primal visibility:public modality:OPEN [val]
+      overridden:
+        public abstract primal: demo.DifferentiableDouble [val]
+      FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]
+        EXPRESSION_BODY
+          CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Double) [primary] declared in demo.DDouble' type=demo.DDouble origin=null
+            value: CONST Double type=kotlin.Double value=0.0
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-primal> visibility:public modality:OPEN <> ($this:demo.ReverseNode) returnType:demo.DifferentiableDouble
+        correspondingProperty: PROPERTY name:primal visibility:public modality:OPEN [val]
+        overridden:
+          public abstract fun <get-primal> (): demo.DifferentiableDouble declared in demo.DifferentiableDouble
+        $this: VALUE_PARAMETER name:<this> type:demo.ReverseNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public open fun <get-primal> (): demo.DifferentiableDouble declared in demo.ReverseNode'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]' type=demo.DifferentiableDouble origin=null
+              receiver: GET_VAR '<this>: demo.ReverseNode declared in demo.ReverseNode.<get-primal>' type=demo.ReverseNode origin=null
+    FUN name:pushback visibility:public modality:FINAL <> ($this:demo.ReverseNode, value:demo.DifferentiableDouble) returnType:kotlin.Unit
+      $this: VALUE_PARAMETER name:<this> type:demo.ReverseNode
+      VALUE_PARAMETER name:value index:0 type:demo.DifferentiableDouble
+      BLOCK_BODY
+    FUN FAKE_OVERRIDE name:value visibility:public modality:OPEN <> ($this:demo.DifferentiableDouble) returnType:kotlin.Double [fake_override]
+      overridden:
+        public open fun value (): kotlin.Double declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    FUN FAKE_OVERRIDE name:zero visibility:public modality:FINAL <> ($this:demo.DifferentiableDouble) returnType:demo.DifferentiableDouble [fake_override]
+      overridden:
+        public final fun zero (): demo.DifferentiableDouble declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    FUN FAKE_OVERRIDE name:one visibility:public modality:FINAL <> ($this:demo.DifferentiableDouble) returnType:demo.DifferentiableDouble [fake_override]
+      overridden:
+        public final fun one (): demo.DifferentiableDouble declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS CLASS name:ForwardNode modality:FINAL visibility:public superTypes:[demo.DifferentiableDouble]
+    annotations:
+      ForwardDifferentiable(tangentProperty = 'tangent')
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ForwardNode
+    CONSTRUCTOR visibility:public <> (tangent:demo.DifferentiableDouble, d:demo.DerivativeID) returnType:demo.ForwardNode [primary]
+      VALUE_PARAMETER name:tangent index:0 type:demo.DifferentiableDouble
+      VALUE_PARAMETER name:d index:1 type:demo.DerivativeID
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'protected constructor <init> () [primary] declared in demo.DifferentiableDouble'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:ForwardNode modality:FINAL visibility:public superTypes:[demo.DifferentiableDouble]'
+    PROPERTY name:tangent visibility:public modality:FINAL [val]
+      FIELD PROPERTY_BACKING_FIELD name:tangent type:demo.DifferentiableDouble visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'tangent: demo.DifferentiableDouble declared in demo.ForwardNode.<init>' type=demo.DifferentiableDouble origin=INITIALIZE_PROPERTY_FROM_PARAMETER
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-tangent> visibility:public modality:FINAL <> ($this:demo.ForwardNode) returnType:demo.DifferentiableDouble
+        correspondingProperty: PROPERTY name:tangent visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.ForwardNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-tangent> (): demo.DifferentiableDouble declared in demo.ForwardNode'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:tangent type:demo.DifferentiableDouble visibility:private [final]' type=demo.DifferentiableDouble origin=null
+              receiver: GET_VAR '<this>: demo.ForwardNode declared in demo.ForwardNode.<get-tangent>' type=demo.ForwardNode origin=null
+    PROPERTY name:derivativeID visibility:public modality:OPEN [val]
+      overridden:
+        public abstract derivativeID: demo.DerivativeID [val]
+      FIELD PROPERTY_BACKING_FIELD name:derivativeID type:demo.DerivativeID visibility:private [final]
+        EXPRESSION_BODY
+          GET_VAR 'd: demo.DerivativeID declared in demo.ForwardNode.<init>' type=demo.DerivativeID origin=null
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-derivativeID> visibility:public modality:OPEN <> ($this:demo.ForwardNode) returnType:demo.DerivativeID
+        correspondingProperty: PROPERTY name:derivativeID visibility:public modality:OPEN [val]
+        overridden:
+          public abstract fun <get-derivativeID> (): demo.DerivativeID declared in demo.DifferentiableDouble
+        $this: VALUE_PARAMETER name:<this> type:demo.ForwardNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public open fun <get-derivativeID> (): demo.DerivativeID declared in demo.ForwardNode'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:derivativeID type:demo.DerivativeID visibility:private [final]' type=demo.DerivativeID origin=null
+              receiver: GET_VAR '<this>: demo.ForwardNode declared in demo.ForwardNode.<get-derivativeID>' type=demo.ForwardNode origin=null
+    PROPERTY name:primal visibility:public modality:OPEN [val]
+      overridden:
+        public abstract primal: demo.DifferentiableDouble [val]
+      FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]
+        EXPRESSION_BODY
+          CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Double) [primary] declared in demo.DDouble' type=demo.DDouble origin=null
+            value: CONST Double type=kotlin.Double value=0.0
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-primal> visibility:public modality:OPEN <> ($this:demo.ForwardNode) returnType:demo.DifferentiableDouble
+        correspondingProperty: PROPERTY name:primal visibility:public modality:OPEN [val]
+        overridden:
+          public abstract fun <get-primal> (): demo.DifferentiableDouble declared in demo.DifferentiableDouble
+        $this: VALUE_PARAMETER name:<this> type:demo.ForwardNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public open fun <get-primal> (): demo.DifferentiableDouble declared in demo.ForwardNode'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]' type=demo.DifferentiableDouble origin=null
+              receiver: GET_VAR '<this>: demo.ForwardNode declared in demo.ForwardNode.<get-primal>' type=demo.ForwardNode origin=null
+    FUN FAKE_OVERRIDE name:value visibility:public modality:OPEN <> ($this:demo.DifferentiableDouble) returnType:kotlin.Double [fake_override]
+      overridden:
+        public open fun value (): kotlin.Double declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    FUN FAKE_OVERRIDE name:zero visibility:public modality:FINAL <> ($this:demo.DifferentiableDouble) returnType:demo.DifferentiableDouble [fake_override]
+      overridden:
+        public final fun zero (): demo.DifferentiableDouble declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    FUN FAKE_OVERRIDE name:one visibility:public modality:FINAL <> ($this:demo.DifferentiableDouble) returnType:demo.DifferentiableDouble [fake_override]
+      overridden:
+        public final fun one (): demo.DifferentiableDouble declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS CLASS name:StackForCompiler modality:FINAL visibility:public superTypes:[kotlin.Any]
+    annotations:
+      StackImpl
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.StackForCompiler<T of demo.StackForCompiler>
+    TYPE_PARAMETER name:T index:0 variance: superTypes:[kotlin.Any?]
+    CONSTRUCTOR visibility:public <> () returnType:demo.StackForCompiler<T of demo.StackForCompiler> [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:StackForCompiler modality:FINAL visibility:public superTypes:[kotlin.Any]'
+    FUN name:pop visibility:public modality:FINAL <> ($this:demo.StackForCompiler<T of demo.StackForCompiler>) returnType:T of demo.StackForCompiler
+      $this: VALUE_PARAMETER name:<this> type:demo.StackForCompiler<T of demo.StackForCompiler>
+      BLOCK_BODY
+        CALL 'public final fun TODO (): kotlin.Nothing [inline] declared in kotlin.StandardKt' type=kotlin.Nothing origin=null
+    FUN name:push visibility:public modality:FINAL <> ($this:demo.StackForCompiler<T of demo.StackForCompiler>, d:T of demo.StackForCompiler) returnType:kotlin.Unit
+      $this: VALUE_PARAMETER name:<this> type:demo.StackForCompiler<T of demo.StackForCompiler>
+      VALUE_PARAMETER name:d index:0 type:T of demo.StackForCompiler
+      BLOCK_BODY
+    FUN name:top visibility:public modality:FINAL <> ($this:demo.StackForCompiler<T of demo.StackForCompiler>) returnType:T of demo.StackForCompiler
+      $this: VALUE_PARAMETER name:<this> type:demo.StackForCompiler<T of demo.StackForCompiler>
+      BLOCK_BODY
+        CALL 'public final fun TODO (): kotlin.Nothing [inline] declared in kotlin.StandardKt' type=kotlin.Nothing origin=null
+    FUN name:notEmpty visibility:public modality:FINAL <> ($this:demo.StackForCompiler<T of demo.StackForCompiler>) returnType:kotlin.Boolean
+      $this: VALUE_PARAMETER name:<this> type:demo.StackForCompiler<T of demo.StackForCompiler>
+      BLOCK_BODY
+        CALL 'public final fun TODO (): kotlin.Nothing [inline] declared in kotlin.StandardKt' type=kotlin.Nothing origin=null
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [operator] declared in kotlin.Any
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int declared in kotlin.Any
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String declared in kotlin.Any
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  FUN name:plus visibility:public modality:FINAL <> ($receiver:demo.DifferentiableDouble, other:demo.DifferentiableDouble) returnType:demo.DifferentiableDouble [operator]
+    $receiver: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    VALUE_PARAMETER name:other index:0 type:demo.DifferentiableDouble
+    BLOCK_BODY
+      CALL 'public final fun TODO (): kotlin.Nothing [inline] declared in kotlin.StandardKt' type=kotlin.Nothing origin=null
+  FUN name:times visibility:public modality:FINAL <> ($receiver:demo.DifferentiableDouble, other:demo.DifferentiableDouble) returnType:demo.DifferentiableDouble [operator]
+    $receiver: VALUE_PARAMETER name:<this> type:demo.DifferentiableDouble
+    VALUE_PARAMETER name:other index:0 type:demo.DifferentiableDouble
+    BLOCK_BODY
+      CALL 'public final fun TODO (): kotlin.Nothing [inline] declared in kotlin.StandardKt' type=kotlin.Nothing origin=null
+  FUN name:primalAndPullback visibility:public modality:FINAL <> (operand:demo.DifferentiableDouble, operator:kotlin.Function1<demo.DifferentiableDouble, demo.DifferentiableDouble>) returnType:demo.DifferentiableDouble
+    annotations:
+      PrimalAndPullback
+    VALUE_PARAMETER name:operand index:0 type:demo.DifferentiableDouble
+    VALUE_PARAMETER name:operator index:1 type:kotlin.Function1<demo.DifferentiableDouble, demo.DifferentiableDouble>
+    BLOCK_BODY
+      CALL 'public final fun TODO (): kotlin.Nothing [inline] declared in kotlin.StandardKt' type=kotlin.Nothing origin=null
+  CLASS CLASS name:ReverseScalarOperations modality:FINAL visibility:public superTypes:[kotlin.Any]
+    annotations:
+      ReverseOperations
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ReverseScalarOperations
+    CONSTRUCTOR visibility:public <> () returnType:demo.ReverseScalarOperations [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:ReverseScalarOperations modality:FINAL visibility:public superTypes:[kotlin.Any]'
+    FUN name:times visibility:public modality:FINAL <> ($this:demo.ReverseScalarOperations, left:demo.DifferentiableDouble, right:demo.DifferentiableDouble, derivativeId:demo.DerivativeID) returnType:demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.ReverseScalarOperations
+      VALUE_PARAMETER name:left index:0 type:demo.DifferentiableDouble
+      VALUE_PARAMETER name:right index:1 type:demo.DifferentiableDouble
+      VALUE_PARAMETER name:derivativeId index:2 type:demo.DerivativeID
+      BLOCK_BODY
+        TYPE_OP type=kotlin.Unit origin=IMPLICIT_COERCION_TO_UNIT typeOperand=kotlin.Unit
+          TYPE_OP type=demo.ReverseNode origin=CAST typeOperand=demo.ReverseNode
+            GET_VAR 'left: demo.DifferentiableDouble declared in demo.ReverseScalarOperations.times' type=demo.DifferentiableDouble origin=null
+        TYPE_OP type=kotlin.Unit origin=IMPLICIT_COERCION_TO_UNIT typeOperand=kotlin.Unit
+          TYPE_OP type=demo.ReverseNode origin=CAST typeOperand=demo.ReverseNode
+            GET_VAR 'right: demo.DifferentiableDouble declared in demo.ReverseScalarOperations.times' type=demo.DifferentiableDouble origin=null
+        TYPE_OP type=kotlin.Unit origin=IMPLICIT_COERCION_TO_UNIT typeOperand=kotlin.Unit
+          TYPE_OP type=demo.ReverseDerivativeID origin=CAST typeOperand=demo.ReverseDerivativeID
+            GET_VAR 'derivativeId: demo.DerivativeID declared in demo.ReverseScalarOperations.times' type=demo.DerivativeID origin=null
+        RETURN type=kotlin.Nothing from='public final fun times (left: demo.DifferentiableDouble, right: demo.DifferentiableDouble, derivativeId: demo.DerivativeID): demo.DifferentiableDouble declared in demo.ReverseScalarOperations'
+          CONSTRUCTOR_CALL 'public constructor <init> (derivativeId: demo.ReverseDerivativeID, left: demo.ReverseNode, right: demo.ReverseNode) [primary] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+            derivativeId: TYPE_OP type=demo.ReverseDerivativeID origin=CAST typeOperand=demo.ReverseDerivativeID
+              GET_VAR 'derivativeId: demo.DerivativeID declared in demo.ReverseScalarOperations.times' type=demo.DerivativeID origin=null
+            left: TYPE_OP type=demo.ReverseNode origin=CAST typeOperand=demo.ReverseNode
+              GET_VAR 'left: demo.DifferentiableDouble declared in demo.ReverseScalarOperations.times' type=demo.DifferentiableDouble origin=null
+            right: TYPE_OP type=demo.ReverseNode origin=CAST typeOperand=demo.ReverseNode
+              GET_VAR 'right: demo.DifferentiableDouble declared in demo.ReverseScalarOperations.times' type=demo.DifferentiableDouble origin=null
+    FUN name:plus visibility:public modality:FINAL <> ($this:demo.ReverseScalarOperations, left:demo.DifferentiableDouble, right:demo.DifferentiableDouble, derivativeId:demo.DerivativeID) returnType:demo.DifferentiableDouble
+      $this: VALUE_PARAMETER name:<this> type:demo.ReverseScalarOperations
+      VALUE_PARAMETER name:left index:0 type:demo.DifferentiableDouble
+      VALUE_PARAMETER name:right index:1 type:demo.DifferentiableDouble
+      VALUE_PARAMETER name:derivativeId index:2 type:demo.DerivativeID
+      BLOCK_BODY
+        TYPE_OP type=kotlin.Unit origin=IMPLICIT_COERCION_TO_UNIT typeOperand=kotlin.Unit
+          TYPE_OP type=demo.ReverseDerivativeID origin=CAST typeOperand=demo.ReverseDerivativeID
+            GET_VAR 'derivativeId: demo.DerivativeID declared in demo.ReverseScalarOperations.plus' type=demo.DerivativeID origin=null
+        RETURN type=kotlin.Nothing from='public final fun plus (left: demo.DifferentiableDouble, right: demo.DifferentiableDouble, derivativeId: demo.DerivativeID): demo.DifferentiableDouble declared in demo.ReverseScalarOperations'
+          CONSTRUCTOR_CALL 'public constructor <init> (derivativeId: demo.ReverseDerivativeID, left: demo.ReverseNode, right: demo.ReverseNode) [primary] declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+            derivativeId: TYPE_OP type=demo.ReverseDerivativeID origin=CAST typeOperand=demo.ReverseDerivativeID
+              GET_VAR 'derivativeId: demo.DerivativeID declared in demo.ReverseScalarOperations.plus' type=demo.DerivativeID origin=null
+            left: TYPE_OP type=demo.ReverseNode origin=CAST typeOperand=demo.ReverseNode
+              GET_VAR 'left: demo.DifferentiableDouble declared in demo.ReverseScalarOperations.plus' type=demo.DifferentiableDouble origin=null
+            right: TYPE_OP type=demo.ReverseNode origin=CAST typeOperand=demo.ReverseNode
+              GET_VAR 'right: demo.DifferentiableDouble declared in demo.ReverseScalarOperations.plus' type=demo.DifferentiableDouble origin=null
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [operator] declared in kotlin.Any
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int declared in kotlin.Any
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String declared in kotlin.Any
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS CLASS name:demo_ReverseScalarOperations_timesLiftedReverseNode modality:FINAL visibility:public superTypes:[demo.ReverseNode]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+    PROPERTY name:derivativeId visibility:public modality:FINAL [val]
+      FIELD name:derivativeId type:demo.ReverseDerivativeID visibility:private
+        EXPRESSION_BODY
+          GET_VAR 'derivativeId: demo.ReverseDerivativeID declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.<init>' type=demo.ReverseDerivativeID origin=null
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-derivativeId> visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:demo.ReverseDerivativeID
+        correspondingProperty: PROPERTY name:derivativeId visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-derivativeId> (): demo.ReverseDerivativeID declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode'
+            GET_FIELD 'FIELD name:derivativeId type:demo.ReverseDerivativeID visibility:private' type=demo.ReverseDerivativeID origin=null
+              receiver: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.<get-derivativeId>' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+    PROPERTY name:left visibility:public modality:FINAL [val]
+      FIELD name:left type:demo.ReverseNode visibility:private
+        EXPRESSION_BODY
+          GET_VAR 'left: demo.ReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.<init>' type=demo.ReverseNode origin=null
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-left> visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:demo.ReverseNode
+        correspondingProperty: PROPERTY name:left visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-left> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode'
+            GET_FIELD 'FIELD name:left type:demo.ReverseNode visibility:private' type=demo.ReverseNode origin=null
+              receiver: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.<get-left>' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+    PROPERTY name:right visibility:public modality:FINAL [val]
+      FIELD name:right type:demo.ReverseNode visibility:private
+        EXPRESSION_BODY
+          GET_VAR 'right: demo.ReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.<init>' type=demo.ReverseNode origin=null
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-right> visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:demo.ReverseNode
+        correspondingProperty: PROPERTY name:right visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-right> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode'
+            GET_FIELD 'FIELD name:right type:demo.ReverseNode visibility:private' type=demo.ReverseNode origin=null
+              receiver: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.<get-right>' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+    CONSTRUCTOR visibility:public <> (derivativeId:demo.ReverseDerivativeID, left:demo.ReverseNode, right:demo.ReverseNode) returnType:demo.demo_ReverseScalarOperations_timesLiftedReverseNode [primary]
+      VALUE_PARAMETER name:derivativeId index:0 type:demo.ReverseDerivativeID
+      VALUE_PARAMETER name:left index:1 type:demo.ReverseNode
+      VALUE_PARAMETER name:right index:2 type:demo.ReverseNode
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> (d: demo.ReverseDerivativeID) [primary] declared in demo.ReverseNode'
+          d: GET_VAR 'derivativeId: demo.ReverseDerivativeID declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.<init>' type=demo.ReverseDerivativeID origin=null
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:demo_ReverseScalarOperations_timesLiftedReverseNode modality:FINAL visibility:public superTypes:[demo.ReverseNode]'
+    PROPERTY name:primal visibility:public modality:OPEN [val]
+      FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-primal> visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:demo.DifferentiableDouble
+        correspondingProperty: PROPERTY name:primal visibility:public modality:OPEN [val]
+        overridden:
+          public open fun <get-primal> (): demo.DifferentiableDouble declared in demo.ReverseNode
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public open fun <get-primal> (): demo.DifferentiableDouble declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]' type=demo.DifferentiableDouble origin=null
+              receiver: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.<get-primal>' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+    PROPERTY FAKE_OVERRIDE name:upstream visibility:public modality:FINAL [fake_override,var]
+      FUN FAKE_OVERRIDE name:<get-upstream> visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:demo.DifferentiableDouble [fake_override]
+        correspondingProperty: PROPERTY FAKE_OVERRIDE name:upstream visibility:public modality:FINAL [fake_override,var]
+        overridden:
+          public final fun <get-upstream> (): demo.DifferentiableDouble declared in demo.ReverseNode
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+      FUN FAKE_OVERRIDE name:<set-upstream> visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode, <set-?>:demo.DifferentiableDouble) returnType:kotlin.Unit [fake_override]
+        correspondingProperty: PROPERTY FAKE_OVERRIDE name:upstream visibility:public modality:FINAL [fake_override,var]
+        overridden:
+          public final fun <set-upstream> (<set-?>: demo.DifferentiableDouble): kotlin.Unit declared in demo.ReverseNode
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+        VALUE_PARAMETER name:<set-?> index:0 type:demo.DifferentiableDouble
+    PROPERTY FAKE_OVERRIDE name:derivativeID visibility:public modality:OPEN [fake_override,val]
+      FUN FAKE_OVERRIDE name:<get-derivativeID> visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:demo.ReverseDerivativeID [fake_override]
+        correspondingProperty: PROPERTY FAKE_OVERRIDE name:derivativeID visibility:public modality:OPEN [fake_override,val]
+        overridden:
+          public open fun <get-derivativeID> (): demo.ReverseDerivativeID declared in demo.ReverseNode
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+    ANONYMOUS_INITIALIZER isStatic=false
+      BLOCK_BODY
+        VAR name:x type:demo.DifferentiableDouble [val]
+          CALL 'public abstract fun <get-primal> (): demo.DifferentiableDouble declared in demo.DifferentiableDouble' type=demo.DifferentiableDouble origin=GET_PROPERTY
+            $this: CALL 'public final fun <get-left> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.ReverseNode origin=GET_PROPERTY
+              $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+        VAR name:y type:demo.DifferentiableDouble [val]
+          CALL 'public abstract fun <get-primal> (): demo.DifferentiableDouble declared in demo.DifferentiableDouble' type=demo.DifferentiableDouble origin=GET_PROPERTY
+            $this: CALL 'public final fun <get-right> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.ReverseNode origin=GET_PROPERTY
+              $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+        SET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]' type=kotlin.Unit origin=null
+          receiver: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+          value: CALL 'public final fun times (other: demo.DifferentiableDouble): demo.DifferentiableDouble [operator] declared in demo' type=demo.DifferentiableDouble origin=MUL
+            $receiver: GET_VAR 'val x: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.DifferentiableDouble origin=null
+            other: GET_VAR 'val y: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.DifferentiableDouble origin=null
+    FUN name:backpropogate visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:kotlin.Unit [inline]
+      overridden:
+        public abstract fun backpropogate (): kotlin.Unit declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+      BLOCK_BODY
+        VAR name:$_unnester_iv_0 type:demo.ReverseNode [val]
+          CALL 'public final fun <get-left> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.ReverseNode origin=GET_PROPERTY
+            $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+        VAR name:$_unnester_iv_1 type:demo.DifferentiableDouble [val]
+          CALL 'public final fun <get-upstream> (): demo.DifferentiableDouble [fake_override] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.DifferentiableDouble origin=GET_PROPERTY
+            $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+        VAR name:$_unnester_iv_2 type:demo.ReverseNode [val]
+          CALL 'public final fun <get-right> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.ReverseNode origin=GET_PROPERTY
+            $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+        VAR name:$_unnester_iv_3 type:demo.DifferentiableDouble [val]
+          CALL 'public abstract fun <get-primal> (): demo.DifferentiableDouble declared in demo.DifferentiableDouble' type=demo.DifferentiableDouble origin=GET_PROPERTY
+            $this: GET_VAR 'val $_unnester_iv_2: demo.ReverseNode [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.ReverseNode origin=null
+        VAR name:$_unnester_iv_4 type:demo.DifferentiableDouble [val]
+          CALL 'public final fun times (other: demo.DifferentiableDouble): demo.DifferentiableDouble [operator] declared in demo' type=demo.DifferentiableDouble origin=MUL
+            $receiver: GET_VAR 'val $_unnester_iv_1: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.DifferentiableDouble origin=null
+            other: GET_VAR 'val $_unnester_iv_3: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.DifferentiableDouble origin=null
+        CALL 'public final fun pushback (value: demo.DifferentiableDouble): kotlin.Unit declared in demo.ReverseNode' type=kotlin.Unit origin=null
+          $this: GET_VAR 'val $_unnester_iv_0: demo.ReverseNode [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.ReverseNode origin=null
+          value: GET_VAR 'val $_unnester_iv_4: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.DifferentiableDouble origin=null
+        VAR name:$_unnester_iv_5 type:demo.ReverseNode [val]
+          CALL 'public final fun <get-right> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.ReverseNode origin=GET_PROPERTY
+            $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+        VAR name:$_unnester_iv_6 type:demo.DifferentiableDouble [val]
+          CALL 'public final fun <get-upstream> (): demo.DifferentiableDouble [fake_override] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.DifferentiableDouble origin=GET_PROPERTY
+            $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+        VAR name:$_unnester_iv_7 type:demo.ReverseNode [val]
+          CALL 'public final fun <get-left> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode' type=demo.ReverseNode origin=GET_PROPERTY
+            $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_timesLiftedReverseNode declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.demo_ReverseScalarOperations_timesLiftedReverseNode origin=null
+        VAR name:$_unnester_iv_8 type:demo.DifferentiableDouble [val]
+          CALL 'public abstract fun <get-primal> (): demo.DifferentiableDouble declared in demo.DifferentiableDouble' type=demo.DifferentiableDouble origin=GET_PROPERTY
+            $this: GET_VAR 'val $_unnester_iv_7: demo.ReverseNode [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.ReverseNode origin=null
+        VAR name:$_unnester_iv_9 type:demo.DifferentiableDouble [val]
+          CALL 'public final fun times (other: demo.DifferentiableDouble): demo.DifferentiableDouble [operator] declared in demo' type=demo.DifferentiableDouble origin=MUL
+            $receiver: GET_VAR 'val $_unnester_iv_6: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.DifferentiableDouble origin=null
+            other: GET_VAR 'val $_unnester_iv_8: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.DifferentiableDouble origin=null
+        CALL 'public final fun pushback (value: demo.DifferentiableDouble): kotlin.Unit declared in demo.ReverseNode' type=kotlin.Unit origin=null
+          $this: GET_VAR 'val $_unnester_iv_5: demo.ReverseNode [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.ReverseNode origin=null
+          value: GET_VAR 'val $_unnester_iv_9: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_timesLiftedReverseNode.backpropogate' type=demo.DifferentiableDouble origin=null
+    FUN FAKE_OVERRIDE name:pushback visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode, value:demo.DifferentiableDouble) returnType:kotlin.Unit [fake_override]
+      overridden:
+        public final fun pushback (value: demo.DifferentiableDouble): kotlin.Unit declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+      VALUE_PARAMETER name:value index:0 type:demo.DifferentiableDouble
+    FUN FAKE_OVERRIDE name:value visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:kotlin.Double [fake_override]
+      overridden:
+        public open fun value (): kotlin.Double [fake_override] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+    FUN FAKE_OVERRIDE name:zero visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:demo.DifferentiableDouble [fake_override]
+      overridden:
+        public final fun zero (): demo.DifferentiableDouble [fake_override] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+    FUN FAKE_OVERRIDE name:one visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:demo.DifferentiableDouble [fake_override]
+      overridden:
+        public final fun one (): demo.DifferentiableDouble [fake_override] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_timesLiftedReverseNode) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_timesLiftedReverseNode
+  CLASS CLASS name:demo_ReverseScalarOperations_plusLiftedReverseNode modality:FINAL visibility:public superTypes:[demo.ReverseNode]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+    PROPERTY name:derivativeId visibility:public modality:FINAL [val]
+      FIELD name:derivativeId type:demo.ReverseDerivativeID visibility:private
+        EXPRESSION_BODY
+          GET_VAR 'derivativeId: demo.ReverseDerivativeID declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.<init>' type=demo.ReverseDerivativeID origin=null
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-derivativeId> visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:demo.ReverseDerivativeID
+        correspondingProperty: PROPERTY name:derivativeId visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-derivativeId> (): demo.ReverseDerivativeID declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode'
+            GET_FIELD 'FIELD name:derivativeId type:demo.ReverseDerivativeID visibility:private' type=demo.ReverseDerivativeID origin=null
+              receiver: GET_VAR '<this>: demo.demo_ReverseScalarOperations_plusLiftedReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.<get-derivativeId>' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+    PROPERTY name:left visibility:public modality:FINAL [val]
+      FIELD name:left type:demo.ReverseNode visibility:private
+        EXPRESSION_BODY
+          GET_VAR 'left: demo.ReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.<init>' type=demo.ReverseNode origin=null
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-left> visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:demo.ReverseNode
+        correspondingProperty: PROPERTY name:left visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-left> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode'
+            GET_FIELD 'FIELD name:left type:demo.ReverseNode visibility:private' type=demo.ReverseNode origin=null
+              receiver: GET_VAR '<this>: demo.demo_ReverseScalarOperations_plusLiftedReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.<get-left>' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+    PROPERTY name:right visibility:public modality:FINAL [val]
+      FIELD name:right type:demo.ReverseNode visibility:private
+        EXPRESSION_BODY
+          GET_VAR 'right: demo.ReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.<init>' type=demo.ReverseNode origin=null
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-right> visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:demo.ReverseNode
+        correspondingProperty: PROPERTY name:right visibility:public modality:FINAL [val]
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public final fun <get-right> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode'
+            GET_FIELD 'FIELD name:right type:demo.ReverseNode visibility:private' type=demo.ReverseNode origin=null
+              receiver: GET_VAR '<this>: demo.demo_ReverseScalarOperations_plusLiftedReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.<get-right>' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+    CONSTRUCTOR visibility:public <> (derivativeId:demo.ReverseDerivativeID, left:demo.ReverseNode, right:demo.ReverseNode) returnType:demo.demo_ReverseScalarOperations_plusLiftedReverseNode [primary]
+      VALUE_PARAMETER name:derivativeId index:0 type:demo.ReverseDerivativeID
+      VALUE_PARAMETER name:left index:1 type:demo.ReverseNode
+      VALUE_PARAMETER name:right index:2 type:demo.ReverseNode
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> (d: demo.ReverseDerivativeID) [primary] declared in demo.ReverseNode'
+          d: GET_VAR 'derivativeId: demo.ReverseDerivativeID declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.<init>' type=demo.ReverseDerivativeID origin=null
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:demo_ReverseScalarOperations_plusLiftedReverseNode modality:FINAL visibility:public superTypes:[demo.ReverseNode]'
+    PROPERTY name:primal visibility:public modality:OPEN [val]
+      FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]
+      FUN DEFAULT_PROPERTY_ACCESSOR name:<get-primal> visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:demo.DifferentiableDouble
+        correspondingProperty: PROPERTY name:primal visibility:public modality:OPEN [val]
+        overridden:
+          public open fun <get-primal> (): demo.DifferentiableDouble declared in demo.ReverseNode
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+        BLOCK_BODY
+          RETURN type=kotlin.Nothing from='public open fun <get-primal> (): demo.DifferentiableDouble declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode'
+            GET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]' type=demo.DifferentiableDouble origin=null
+              receiver: GET_VAR '<this>: demo.demo_ReverseScalarOperations_plusLiftedReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.<get-primal>' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+    PROPERTY FAKE_OVERRIDE name:upstream visibility:public modality:FINAL [fake_override,var]
+      FUN FAKE_OVERRIDE name:<get-upstream> visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:demo.DifferentiableDouble [fake_override]
+        correspondingProperty: PROPERTY FAKE_OVERRIDE name:upstream visibility:public modality:FINAL [fake_override,var]
+        overridden:
+          public final fun <get-upstream> (): demo.DifferentiableDouble declared in demo.ReverseNode
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+      FUN FAKE_OVERRIDE name:<set-upstream> visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode, <set-?>:demo.DifferentiableDouble) returnType:kotlin.Unit [fake_override]
+        correspondingProperty: PROPERTY FAKE_OVERRIDE name:upstream visibility:public modality:FINAL [fake_override,var]
+        overridden:
+          public final fun <set-upstream> (<set-?>: demo.DifferentiableDouble): kotlin.Unit declared in demo.ReverseNode
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+        VALUE_PARAMETER name:<set-?> index:0 type:demo.DifferentiableDouble
+    PROPERTY FAKE_OVERRIDE name:derivativeID visibility:public modality:OPEN [fake_override,val]
+      FUN FAKE_OVERRIDE name:<get-derivativeID> visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:demo.ReverseDerivativeID [fake_override]
+        correspondingProperty: PROPERTY FAKE_OVERRIDE name:derivativeID visibility:public modality:OPEN [fake_override,val]
+        overridden:
+          public open fun <get-derivativeID> (): demo.ReverseDerivativeID declared in demo.ReverseNode
+        $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+    ANONYMOUS_INITIALIZER isStatic=false
+      BLOCK_BODY
+        VAR name:x type:demo.DifferentiableDouble [val]
+          CALL 'public abstract fun <get-primal> (): demo.DifferentiableDouble declared in demo.DifferentiableDouble' type=demo.DifferentiableDouble origin=GET_PROPERTY
+            $this: CALL 'public final fun <get-left> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.ReverseNode origin=GET_PROPERTY
+              $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_plusLiftedReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+        VAR name:y type:demo.DifferentiableDouble [val]
+          CALL 'public abstract fun <get-primal> (): demo.DifferentiableDouble declared in demo.DifferentiableDouble' type=demo.DifferentiableDouble origin=GET_PROPERTY
+            $this: CALL 'public final fun <get-right> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.ReverseNode origin=GET_PROPERTY
+              $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_plusLiftedReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+        SET_FIELD 'FIELD PROPERTY_BACKING_FIELD name:primal type:demo.DifferentiableDouble visibility:private [final]' type=kotlin.Unit origin=null
+          receiver: GET_VAR '<this>: demo.demo_ReverseScalarOperations_plusLiftedReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+          value: CALL 'public final fun plus (other: demo.DifferentiableDouble): demo.DifferentiableDouble [operator] declared in demo' type=demo.DifferentiableDouble origin=PLUS
+            $receiver: GET_VAR 'val x: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.DifferentiableDouble origin=null
+            other: GET_VAR 'val y: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.DifferentiableDouble origin=null
+    FUN name:backpropogate visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:kotlin.Unit [inline]
+      overridden:
+        public abstract fun backpropogate (): kotlin.Unit declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+      BLOCK_BODY
+        VAR name:$_unnester_iv_10 type:demo.ReverseNode [val]
+          CALL 'public final fun <get-left> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.ReverseNode origin=GET_PROPERTY
+            $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_plusLiftedReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.backpropogate' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+        VAR name:$_unnester_iv_11 type:demo.DifferentiableDouble [val]
+          CALL 'public final fun <get-upstream> (): demo.DifferentiableDouble [fake_override] declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.DifferentiableDouble origin=GET_PROPERTY
+            $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_plusLiftedReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.backpropogate' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+        CALL 'public final fun pushback (value: demo.DifferentiableDouble): kotlin.Unit declared in demo.ReverseNode' type=kotlin.Unit origin=null
+          $this: GET_VAR 'val $_unnester_iv_10: demo.ReverseNode [val] declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.backpropogate' type=demo.ReverseNode origin=null
+          value: GET_VAR 'val $_unnester_iv_11: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.backpropogate' type=demo.DifferentiableDouble origin=null
+        VAR name:$_unnester_iv_12 type:demo.ReverseNode [val]
+          CALL 'public final fun <get-right> (): demo.ReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.ReverseNode origin=GET_PROPERTY
+            $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_plusLiftedReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.backpropogate' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+        VAR name:$_unnester_iv_13 type:demo.DifferentiableDouble [val]
+          CALL 'public final fun <get-upstream> (): demo.DifferentiableDouble [fake_override] declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode' type=demo.DifferentiableDouble origin=GET_PROPERTY
+            $this: GET_VAR '<this>: demo.demo_ReverseScalarOperations_plusLiftedReverseNode declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.backpropogate' type=demo.demo_ReverseScalarOperations_plusLiftedReverseNode origin=null
+        CALL 'public final fun pushback (value: demo.DifferentiableDouble): kotlin.Unit declared in demo.ReverseNode' type=kotlin.Unit origin=null
+          $this: GET_VAR 'val $_unnester_iv_12: demo.ReverseNode [val] declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.backpropogate' type=demo.ReverseNode origin=null
+          value: GET_VAR 'val $_unnester_iv_13: demo.DifferentiableDouble [val] declared in demo.demo_ReverseScalarOperations_plusLiftedReverseNode.backpropogate' type=demo.DifferentiableDouble origin=null
+    FUN FAKE_OVERRIDE name:pushback visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode, value:demo.DifferentiableDouble) returnType:kotlin.Unit [fake_override]
+      overridden:
+        public final fun pushback (value: demo.DifferentiableDouble): kotlin.Unit declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+      VALUE_PARAMETER name:value index:0 type:demo.DifferentiableDouble
+    FUN FAKE_OVERRIDE name:value visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:kotlin.Double [fake_override]
+      overridden:
+        public open fun value (): kotlin.Double [fake_override] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+    FUN FAKE_OVERRIDE name:zero visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:demo.DifferentiableDouble [fake_override]
+      overridden:
+        public final fun zero (): demo.DifferentiableDouble [fake_override] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+    FUN FAKE_OVERRIDE name:one visibility:public modality:FINAL <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:demo.DifferentiableDouble [fake_override]
+      overridden:
+        public final fun one (): demo.DifferentiableDouble [fake_override] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:demo.demo_ReverseScalarOperations_plusLiftedReverseNode) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in demo.ReverseNode
+      $this: VALUE_PARAMETER name:<this> type:demo.demo_ReverseScalarOperations_plusLiftedReverseNode

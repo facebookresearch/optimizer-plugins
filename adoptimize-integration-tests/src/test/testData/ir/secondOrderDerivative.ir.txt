@@ -1,0 +1,847 @@
+FILE fqName:demo fileName:/secondOrderDerivative.kt
+  CLASS ANNOTATION_CLASS name:Optimize modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.Optimize
+    CONSTRUCTOR visibility:public <> () returnType:demo.Optimize [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:Optimize modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:SecondOrderOptimize modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.SecondOrderOptimize
+    CONSTRUCTOR visibility:public <> () returnType:demo.SecondOrderOptimize [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:SecondOrderOptimize modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  FUN name:target visibility:public modality:FINAL <> (a:org.diffkt.DScalar) returnType:org.diffkt.DScalar
+    annotations:
+      SecondOrderOptimize
+    VALUE_PARAMETER name:a index:0 type:org.diffkt.DScalar
+    BLOCK_BODY
+      FUN LOCAL_FUNCTION_FOR_LAMBDA name:<anonymous> visibility:local modality:FINAL <> () returnType:org.diffkt.DScalar
+        BLOCK_BODY
+          VAR name:c type:kotlin.Float [val]
+            CONST Float type=kotlin.Float value=2.0
+          VAR name:i0 type:org.diffkt.DScalar [val]
+            CALL 'public final fun pow (x: kotlin.Float): org.diffkt.DScalar declared in org.diffkt.PowerKt' type=org.diffkt.DScalar origin=null
+              $receiver: GET_VAR 'a: org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+              x: GET_VAR 'val c: kotlin.Float [val] declared in demo.target.<anonymous>' type=kotlin.Float origin=null
+          VAR name:i1 type:org.diffkt.DScalar [val]
+            CALL 'public final fun plus (right: org.diffkt.DScalar): org.diffkt.DScalar [operator] declared in org.diffkt.PlusKt' type=org.diffkt.DScalar origin=PLUS
+              $receiver: GET_VAR 'val i0: org.diffkt.DScalar [val] declared in demo.target.<anonymous>' type=org.diffkt.DScalar origin=null
+              right: GET_VAR 'val i0: org.diffkt.DScalar [val] declared in demo.target.<anonymous>' type=org.diffkt.DScalar origin=null
+          VAR name:i2 type:org.diffkt.DScalar [val]
+            CALL 'public final fun times (right: org.diffkt.DScalar): org.diffkt.DScalar [operator] declared in org.diffkt.TimesKt' type=org.diffkt.DScalar origin=MUL
+              $receiver: GET_VAR 'val i1: org.diffkt.DScalar [val] declared in demo.target.<anonymous>' type=org.diffkt.DScalar origin=null
+              right: GET_VAR 'val i1: org.diffkt.DScalar [val] declared in demo.target.<anonymous>' type=org.diffkt.DScalar origin=null
+          RETURN type=kotlin.Nothing from='local final fun <anonymous> (): org.diffkt.DScalar declared in demo.target'
+            GET_VAR 'val i2: org.diffkt.DScalar [val] declared in demo.target.<anonymous>' type=org.diffkt.DScalar origin=null
+      CLASS CLASS name:targetReverseForward modality:FINAL visibility:local superTypes:[org.diffkt.reverse.ReverseScalar]
+        $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.target.targetReverseForward
+        PROPERTY FAKE_OVERRIDE name:derivativeID visibility:public modality:FINAL [fake_override,val]
+          FUN FAKE_OVERRIDE name:<get-derivativeID> visibility:public modality:FINAL <> ($this:org.diffkt.reverse.ReverseTensor) returnType:org.diffkt.reverse.ReverseDerivativeID [fake_override]
+            correspondingProperty: PROPERTY FAKE_OVERRIDE name:derivativeID visibility:public modality:FINAL [fake_override,val]
+            overridden:
+              public final fun <get-derivativeID> (): org.diffkt.reverse.ReverseDerivativeID [fake_override] declared in org.diffkt.reverse.ReverseScalar
+            $this: VALUE_PARAMETER name:<this> type:org.diffkt.reverse.ReverseTensor
+        PROPERTY FAKE_OVERRIDE name:indices visibility:public modality:OPEN [fake_override,val]
+          FUN FAKE_OVERRIDE name:<get-indices> visibility:public modality:OPEN <> ($this:org.diffkt.DTensor) returnType:kotlin.collections.Iterator<kotlin.IntArray> [fake_override]
+            correspondingProperty: PROPERTY FAKE_OVERRIDE name:indices visibility:public modality:OPEN [fake_override,val]
+            overridden:
+              public open fun <get-indices> (): kotlin.collections.Iterator<kotlin.IntArray> [fake_override] declared in org.diffkt.reverse.ReverseScalar
+            $this: VALUE_PARAMETER name:<this> type:org.diffkt.DTensor
+        PROPERTY FAKE_OVERRIDE name:isScalar visibility:public modality:OPEN [fake_override,val]
+          FUN FAKE_OVERRIDE name:<get-isScalar> visibility:public modality:OPEN <> ($this:org.diffkt.DTensor) returnType:kotlin.Boolean [fake_override]
+            correspondingProperty: PROPERTY FAKE_OVERRIDE name:isScalar visibility:public modality:OPEN [fake_override,val]
+            overridden:
+              public open fun <get-isScalar> (): kotlin.Boolean [fake_override] declared in org.diffkt.reverse.ReverseScalar
+            $this: VALUE_PARAMETER name:<this> type:org.diffkt.DTensor
+        PROPERTY FAKE_OVERRIDE name:operations visibility:public modality:OPEN [fake_override,val]
+          FUN FAKE_OVERRIDE name:<get-operations> visibility:public modality:OPEN <> ($this:org.diffkt.reverse.ReverseScalar) returnType:org.diffkt.Operations [fake_override]
+            correspondingProperty: PROPERTY FAKE_OVERRIDE name:operations visibility:public modality:OPEN [fake_override,val]
+            overridden:
+              public open fun <get-operations> (): org.diffkt.Operations declared in org.diffkt.reverse.ReverseScalar
+            $this: VALUE_PARAMETER name:<this> type:org.diffkt.reverse.ReverseScalar
+        PROPERTY FAKE_OVERRIDE name:rank visibility:public modality:OPEN [fake_override,val]
+          FUN FAKE_OVERRIDE name:<get-rank> visibility:public modality:OPEN <> ($this:org.diffkt.DTensor) returnType:kotlin.Int [fake_override]
+            correspondingProperty: PROPERTY FAKE_OVERRIDE name:rank visibility:public modality:OPEN [fake_override,val]
+            overridden:
+              public open fun <get-rank> (): kotlin.Int [fake_override] declared in org.diffkt.reverse.ReverseScalar
+            $this: VALUE_PARAMETER name:<this> type:org.diffkt.DTensor
+        PROPERTY FAKE_OVERRIDE name:shape visibility:public modality:OPEN [fake_override,val]
+          FUN FAKE_OVERRIDE name:<get-shape> visibility:public modality:OPEN <> ($this:org.diffkt.DTensor) returnType:org.diffkt.Shape [fake_override]
+            correspondingProperty: PROPERTY FAKE_OVERRIDE name:shape visibility:public modality:OPEN [fake_override,val]
+            overridden:
+              public open fun <get-shape> (): org.diffkt.Shape [fake_override] declared in org.diffkt.reverse.ReverseScalar
+            $this: VALUE_PARAMETER name:<this> type:org.diffkt.DTensor
+        PROPERTY FAKE_OVERRIDE name:size visibility:public modality:OPEN [fake_override,val]
+          FUN FAKE_OVERRIDE name:<get-size> visibility:public modality:OPEN <> ($this:org.diffkt.DTensor) returnType:kotlin.Int [fake_override]
+            correspondingProperty: PROPERTY FAKE_OVERRIDE name:size visibility:public modality:OPEN [fake_override,val]
+            overridden:
+              public open fun <get-size> (): kotlin.Int [fake_override] declared in org.diffkt.reverse.ReverseScalar
+            $this: VALUE_PARAMETER name:<this> type:org.diffkt.DTensor
+        PROPERTY FAKE_OVERRIDE name:upstream visibility:public modality:FINAL [fake_override,var]
+          FUN FAKE_OVERRIDE name:<get-upstream> visibility:public modality:FINAL <> ($this:org.diffkt.reverse.ReverseTensor) returnType:org.diffkt.DTensor [fake_override]
+            correspondingProperty: PROPERTY FAKE_OVERRIDE name:upstream visibility:public modality:FINAL [fake_override,var]
+            overridden:
+              public final fun <get-upstream> (): org.diffkt.DTensor [fake_override] declared in org.diffkt.reverse.ReverseScalar
+            $this: VALUE_PARAMETER name:<this> type:org.diffkt.reverse.ReverseTensor
+          FUN FAKE_OVERRIDE name:<set-upstream> visibility:public modality:FINAL <> ($this:org.diffkt.reverse.ReverseTensor, value:org.diffkt.DTensor) returnType:kotlin.Unit [fake_override]
+            correspondingProperty: PROPERTY FAKE_OVERRIDE name:upstream visibility:public modality:FINAL [fake_override,var]
+            overridden:
+              public final fun <set-upstream> (value: org.diffkt.DTensor): kotlin.Unit [fake_override] declared in org.diffkt.reverse.ReverseScalar
+            $this: VALUE_PARAMETER name:<this> type:org.diffkt.reverse.ReverseTensor
+            VALUE_PARAMETER name:value index:0 type:org.diffkt.DTensor
+        FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:demo.target.targetReverseForward, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override]
+          overridden:
+            public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in org.diffkt.reverse.ReverseScalar
+          $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+          VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+        FUN FAKE_OVERRIDE name:get visibility:public modality:OPEN <> ($this:demo.target.targetReverseForward, index:kotlin.Int) returnType:org.diffkt.DTensor [fake_override]
+          overridden:
+            public open fun get (index: kotlin.Int): org.diffkt.DTensor [fake_override,operator] declared in org.diffkt.reverse.ReverseScalar
+          $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+          VALUE_PARAMETER name:index index:0 type:kotlin.Int
+        FUN FAKE_OVERRIDE name:get visibility:public modality:OPEN <> ($this:demo.target.targetReverseForward, indices:kotlin.IntArray) returnType:org.diffkt.DTensor [fake_override]
+          overridden:
+            public open fun get (vararg indices: kotlin.Int): org.diffkt.DTensor [fake_override,operator] declared in org.diffkt.reverse.ReverseScalar
+          $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+          VALUE_PARAMETER name:indices index:0 type:kotlin.IntArray
+        FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:demo.target.targetReverseForward) returnType:kotlin.Int [fake_override]
+          overridden:
+            public open fun hashCode (): kotlin.Int [fake_override] declared in org.diffkt.reverse.ReverseScalar
+          $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+        FUN FAKE_OVERRIDE name:pushback visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward, upstream:org.diffkt.DTensor) returnType:kotlin.Unit [fake_override]
+          overridden:
+            public final fun pushback (upstream: org.diffkt.DTensor): kotlin.Unit [fake_override] declared in org.diffkt.reverse.ReverseScalar
+          $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+          VALUE_PARAMETER name:upstream index:0 type:org.diffkt.DTensor
+        FUN FAKE_OVERRIDE name:toCodeString visibility:public modality:OPEN <> ($this:demo.target.targetReverseForward) returnType:kotlin.String [fake_override]
+          overridden:
+            public open fun toCodeString (): kotlin.String [fake_override] declared in org.diffkt.reverse.ReverseScalar
+          $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+        FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:demo.target.targetReverseForward) returnType:kotlin.String [fake_override]
+          overridden:
+            public open fun toString (): kotlin.String [fake_override] declared in org.diffkt.reverse.ReverseScalar
+          $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+        FUN FAKE_OVERRIDE name:wrap visibility:public modality:OPEN <> ($this:demo.target.targetReverseForward, wrapper:org.diffkt.Wrapper) returnType:org.diffkt.DTensor [fake_override]
+          overridden:
+            public open fun wrap (wrapper: org.diffkt.Wrapper): org.diffkt.DTensor [fake_override] declared in org.diffkt.reverse.ReverseScalar
+          $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+          VALUE_PARAMETER name:wrapper index:0 type:org.diffkt.Wrapper
+        CONSTRUCTOR visibility:public <> (aReverse:org.diffkt.reverse.ReverseScalar, aForwardPrimal:org.diffkt.forward.ForwardScalar, aPrimal:kotlin.Float) returnType:demo.target.targetReverseForward [primary]
+          VALUE_PARAMETER name:aReverse index:0 type:org.diffkt.reverse.ReverseScalar
+          VALUE_PARAMETER name:aForwardPrimal index:1 type:org.diffkt.forward.ForwardScalar
+          VALUE_PARAMETER name:aPrimal index:2 type:kotlin.Float
+          BLOCK_BODY
+            DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> (primal: org.diffkt.DScalar, derivativeID: org.diffkt.reverse.ReverseDerivativeID) [primary] declared in org.diffkt.reverse.ReverseScalar'
+              primal: CALL 'public final fun <get-ZERO> (): org.diffkt.FloatScalar declared in org.diffkt.FloatScalar.Companion' type=org.diffkt.DScalar origin=null
+                $this: GET_OBJECT 'CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Companion modality:FINAL visibility:public [companion] superTypes:[kotlin.Any]' type=org.diffkt.FloatScalar.Companion
+              derivativeID: TYPE_OP type=org.diffkt.reverse.ReverseDerivativeID origin=CAST typeOperand=org.diffkt.reverse.ReverseDerivativeID
+                CALL 'public abstract fun <get-derivativeID> (): org.diffkt.DerivativeID [fake_override] declared in org.diffkt.DScalar' type=org.diffkt.DerivativeID origin=GET_PROPERTY
+                  $this: GET_VAR 'a: org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+            INSTANCE_INITIALIZER_CALL classDescriptor='CLASS CLASS name:targetReverseForward modality:FINAL visibility:local superTypes:[org.diffkt.reverse.ReverseScalar]'
+        FUN name:backpropagate visibility:public modality:OPEN <> ($this:demo.target.targetReverseForward) returnType:kotlin.Unit
+          overridden:
+            public abstract fun backpropagate (): kotlin.Unit [fake_override] declared in org.diffkt.reverse.ReverseScalar
+          $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+          BLOCK_BODY
+            VAR name:$up type:org.diffkt.DTensor [val]
+              CALL 'public final fun <get-upstream> (): org.diffkt.DTensor [fake_override] declared in org.diffkt.reverse.ReverseScalar' type=org.diffkt.DTensor origin=GET_PROPERTY
+                $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+            VAR name:$_unnester_iv_12 type:kotlin.Boolean [val]
+              CONST Boolean type=kotlin.Boolean value=true
+            WHEN type=kotlin.Unit origin=null
+              BRANCH
+                if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=org.diffkt.DScalar
+                  GET_VAR 'val $up: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                then: BLOCK type=kotlin.Unit origin=null
+                  VAR name:a_local_0 type:kotlin.Float [val]
+                    CALL 'public final fun <get-aPrimal> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$aPrimal_tangent type:kotlin.Float [val]
+                    CALL 'public final fun <get-aPrimal_tangent> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$_unnester_iv_0 type:org.diffkt.FloatScalar.Companion [val]
+                    GET_OBJECT 'CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Companion modality:FINAL visibility:public [companion] superTypes:[kotlin.Any]' type=org.diffkt.FloatScalar.Companion
+                  VAR name:$a_derivative type:kotlin.Float [var]
+                    CONST Float type=kotlin.Float value=0.0
+                  VAR name:$$a_derivative_tangent type:kotlin.Float [var]
+                    CONST Float type=kotlin.Float value=0.0
+                  VAR name:i2_local_2 type:kotlin.Float [val]
+                    CALL 'public final fun <get-primitivePrimal> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$primitivePrimal_tangent type:kotlin.Float [val]
+                    CALL 'public final fun <get-$i2_tangent> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:i1_local_3 type:kotlin.Float [val]
+                    CALL 'public final fun <get-i1> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$i1_tangent type:kotlin.Float [val]
+                    CALL 'public final fun <get-$i1_tangent> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$_unnester_iv_1 type:org.diffkt.FloatScalar.Companion [val]
+                    GET_OBJECT 'CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Companion modality:FINAL visibility:public [companion] superTypes:[kotlin.Any]' type=org.diffkt.FloatScalar.Companion
+                  VAR name:$i1_derivative type:kotlin.Float [var]
+                    CONST Float type=kotlin.Float value=0.0
+                  VAR name:$$i1_derivative_tangent type:kotlin.Float [var]
+                    CONST Float type=kotlin.Float value=0.0
+                  VAR name:i0_local_4 type:kotlin.Float [val]
+                    CALL 'public final fun <get-i0> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$i0_tangent type:kotlin.Float [val]
+                    CALL 'public final fun <get-$i0_tangent> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$_unnester_iv_2 type:org.diffkt.FloatScalar.Companion [val]
+                    GET_OBJECT 'CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Companion modality:FINAL visibility:public [companion] superTypes:[kotlin.Any]' type=org.diffkt.FloatScalar.Companion
+                  VAR name:$i0_derivative type:kotlin.Float [var]
+                    CONST Float type=kotlin.Float value=0.0
+                  VAR name:$$i0_derivative_tangent type:kotlin.Float [var]
+                    CONST Float type=kotlin.Float value=0.0
+                  VAR name:$_unnester_iv_8 type:org.diffkt.DTensor [val]
+                    CALL 'public final fun <get-upstream> (): org.diffkt.DTensor [fake_override] declared in demo.target.targetReverseUnboxed' type=org.diffkt.DTensor origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$_unnester_iv_9 type:org.diffkt.FloatScalar [val]
+                    TYPE_OP type=org.diffkt.FloatScalar origin=CAST typeOperand=org.diffkt.FloatScalar
+                      GET_VAR 'val $_unnester_iv_8: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                  VAR name:upstream type:kotlin.Float [val]
+                    CALL 'public final fun <get-value> (): kotlin.Float declared in org.diffkt.FloatScalar' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR 'val $_unnester_iv_9: org.diffkt.FloatScalar [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                  VAR name:$upstream_tangent type:kotlin.Float [var]
+                    CONST Float type=kotlin.Float value=0.0
+                  VAR name:$_unnester_iv_39 type:kotlin.Float [val]
+                    CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val i1_local_3: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val upstream: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_39 type:kotlin.Float [val]
+                    CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val upstream: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $i1_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_43 type:kotlin.Float [val]
+                    GET_VAR 'var $upstream_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_44 type:kotlin.Float [val]
+                    CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val i1_local_3: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_43: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$$_unnester_iv_39_tangent type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_44: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_39: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_3 type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_39: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'var $i1_derivative: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_9 type:kotlin.Float [val]
+                    GET_VAR 'var $$i1_derivative_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$$_unnester_iv_3_tangent type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_9: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $$_unnester_iv_39_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_4 type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_39: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_3: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$$_unnester_iv_4_tangent type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $$_unnester_iv_3_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $$_unnester_iv_39_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  SET_VAR 'var $i1_derivative: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                    GET_VAR 'val $_unnester_iv_4: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  SET_VAR 'var $$i1_derivative_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Unit origin=null
+                    GET_VAR 'val $$_unnester_iv_4_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_5 type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'var $i1_derivative: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'var $i0_derivative: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_7 type:kotlin.Float [val]
+                    GET_VAR 'var $$i1_derivative_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_9 type:kotlin.Float [val]
+                    GET_VAR 'var $$i0_derivative_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$$_unnester_iv_5_tangent type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_9: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_7: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_6 type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'var $i1_derivative: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_5: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_7 type:kotlin.Float [val]
+                    GET_VAR 'var $$i1_derivative_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$$_unnester_iv_6_tangent type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $$_unnester_iv_5_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_7: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  SET_VAR 'var $i0_derivative: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                    GET_VAR 'val $_unnester_iv_6: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  SET_VAR 'var $$i0_derivative_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Unit origin=null
+                    GET_VAR 'val $$_unnester_iv_6_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:c type:kotlin.Float [val]
+                    CALL 'public final fun <get-c> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$c_tangent type:kotlin.Float [var]
+                    CONST Float type=kotlin.Float value=0.0
+                  VAR name:$_unnester_iv_145 type:kotlin.Int [val]
+                    CONST Int type=kotlin.Int value=1
+                  VAR name:$_unnester_iv_146 type:kotlin.Float [val]
+                    CALL 'public final fun minus (other: kotlin.Int): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MINUS
+                      $this: GET_VAR 'val c: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_145: kotlin.Int [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Int origin=null
+                  VAR name:$_unnester_iv_147 type:kotlin.Float [val]
+                    CALL 'public final fun pow (x: kotlin.Float): kotlin.Float [inline] declared in kotlin.math.MathKt' type=kotlin.Float origin=null
+                      $receiver: GET_VAR 'val a_local_0: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      x: GET_VAR 'val $_unnester_iv_146: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_146 type:kotlin.Float [val]
+                    CALL 'public final fun minus (other: kotlin.Int): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MINUS
+                      $this: GET_VAR 'val $_unnester_iv_146: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_145: kotlin.Int [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Int origin=null
+                  VAR name:$_unnester_iv_147 type:kotlin.Float [val]
+                    CALL 'public final fun pow (x: kotlin.Float): kotlin.Float [inline] declared in kotlin.math.MathKt' type=kotlin.Float origin=null
+                      $receiver: GET_VAR 'val a_local_0: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      x: GET_VAR 'val $_unnester_iv_146: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_150 type:kotlin.Float [val]
+                    CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_146: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_147: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_152 type:kotlin.Float [val]
+                    CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_150: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $aPrimal_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_150 type:kotlin.Float [val]
+                    CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val c: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_147: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_38 type:kotlin.Float [val]
+                    GET_VAR 'var $c_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_39 type:kotlin.Float [val]
+                    CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_147: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_38: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_44 type:kotlin.Float [val]
+                    CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val c: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_152: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$$_unnester_iv_150_tangent type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_44: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_39: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_152 type:kotlin.Float [val]
+                    CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_150: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'var $i0_derivative: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_36 type:kotlin.Float [val]
+                    GET_VAR 'var $i0_derivative: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_39 type:kotlin.Float [val]
+                    CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_36: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $$_unnester_iv_150_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_43 type:kotlin.Float [val]
+                    GET_VAR 'var $$i0_derivative_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_44 type:kotlin.Float [val]
+                    CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_150: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_43: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$$_unnester_iv_152_tangent type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_44: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_39: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_7 type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_152: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'var $a_derivative: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_9 type:kotlin.Float [val]
+                    GET_VAR 'var $$a_derivative_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$$_unnester_iv_7_tangent type:kotlin.Float [val]
+                    CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                      $this: GET_VAR 'val $_unnester_iv_9: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $$_unnester_iv_152_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  SET_VAR 'var $a_derivative: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                    GET_VAR 'val $_unnester_iv_7: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  SET_VAR 'var $$a_derivative_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Unit origin=null
+                    GET_VAR 'val $$_unnester_iv_7_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_10 type:org.diffkt.reverse.ReverseScalar [val]
+                    CALL 'public final fun <get-aReverse> (): org.diffkt.reverse.ReverseScalar declared in demo.target.targetReverseForward' type=org.diffkt.reverse.ReverseScalar origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$_unnester_iv_11 type:org.diffkt.FloatScalar [val]
+                    CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Float) [primary] declared in org.diffkt.FloatScalar' type=org.diffkt.FloatScalar origin=null
+                      value: GET_VAR 'var $a_derivative: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_18 type:org.diffkt.forward.ForwardScalar [val]
+                    CALL 'public final fun <get-aForwardPrimal> (): org.diffkt.forward.ForwardScalar declared in demo.target.targetReverseForward' type=org.diffkt.forward.ForwardScalar origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$_unnester_iv_19 type:org.diffkt.forward.ForwardDerivativeID [val]
+                    CALL 'public open fun <get-derivativeID> (): org.diffkt.forward.ForwardDerivativeID [fake_override] declared in org.diffkt.forward.ForwardScalar' type=org.diffkt.forward.ForwardDerivativeID origin=GET_PROPERTY
+                      $this: GET_VAR 'val $_unnester_iv_18: org.diffkt.forward.ForwardScalar [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.forward.ForwardScalar origin=null
+                  VAR name:$_unnester_iv_20 type:org.diffkt.FloatScalar [val]
+                    CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Float) [primary] declared in org.diffkt.FloatScalar' type=org.diffkt.FloatScalar origin=null
+                      value: GET_VAR 'var $$a_derivative_tangent: kotlin.Float [var] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_21 type:org.diffkt.forward.ForwardScalar [val]
+                    CONSTRUCTOR_CALL 'public constructor <init> (primal: org.diffkt.DScalar, derivativeID: org.diffkt.forward.ForwardDerivativeID, tangent: org.diffkt.DTensor) declared in org.diffkt.forward.ForwardScalar' type=org.diffkt.forward.ForwardScalar origin=null
+                      primal: GET_VAR 'val $_unnester_iv_11: org.diffkt.FloatScalar [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                      derivativeID: GET_VAR 'val $_unnester_iv_19: org.diffkt.forward.ForwardDerivativeID [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.forward.ForwardDerivativeID origin=null
+                      tangent: GET_VAR 'val $_unnester_iv_20: org.diffkt.FloatScalar [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                  CALL 'public final fun pushback (upstream: org.diffkt.DTensor): kotlin.Unit [fake_override] declared in org.diffkt.reverse.ReverseScalar' type=kotlin.Unit origin=null
+                    $this: GET_VAR 'val $_unnester_iv_10: org.diffkt.reverse.ReverseScalar [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.reverse.ReverseScalar origin=null
+                    upstream: GET_VAR 'val $_unnester_iv_21: org.diffkt.forward.ForwardScalar [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.forward.ForwardScalar origin=null
+              BRANCH
+                if: GET_VAR 'val $_unnester_iv_12: kotlin.Boolean [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Boolean origin=null
+                then: BLOCK type=kotlin.Unit origin=null
+                  VAR name:$_unnester_iv_13 type:kotlin.Float [val]
+                    CALL 'public final fun <get-aPrimal> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$aPrimal_tangent type:kotlin.Float [val]
+                    CALL 'public final fun <get-aPrimal_tangent> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$aNode_local type:org.diffkt.FloatScalar [val]
+                    CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Float) [primary] declared in org.diffkt.FloatScalar' type=org.diffkt.FloatScalar origin=null
+                      value: GET_VAR 'val $_unnester_iv_13: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_14 type:kotlin.Float [val]
+                    CALL 'public final fun <get-i0> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$i0_tangent type:kotlin.Float [val]
+                    CALL 'public final fun <get-$i0_tangent> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:i0_local type:org.diffkt.FloatScalar [val]
+                    CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Float) [primary] declared in org.diffkt.FloatScalar' type=org.diffkt.FloatScalar origin=null
+                      value: GET_VAR 'val $_unnester_iv_14: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_15 type:kotlin.Float [val]
+                    CALL 'public final fun <get-i1> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$i1_tangent type:kotlin.Float [val]
+                    CALL 'public final fun <get-$i1_tangent> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:i1_local type:org.diffkt.FloatScalar [val]
+                    CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Float) [primary] declared in org.diffkt.FloatScalar' type=org.diffkt.FloatScalar origin=null
+                      value: GET_VAR 'val $_unnester_iv_15: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:a_local_1_primal type:org.diffkt.DScalar [val]
+                    CALL 'public open fun <get-primal> (): org.diffkt.DScalar declared in org.diffkt.FloatScalar' type=org.diffkt.DScalar origin=null
+                      $this: GET_VAR 'val $aNode_local: org.diffkt.FloatScalar [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                  VAR name:$_unnester_iv_0 type:org.diffkt.FloatScalar.Companion [val]
+                    GET_OBJECT 'CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Companion modality:FINAL visibility:public [companion] superTypes:[kotlin.Any]' type=org.diffkt.FloatScalar.Companion
+                  VAR name:$a_derivative type:org.diffkt.FloatScalar [var]
+                    CALL 'public final fun <get-ZERO> (): org.diffkt.FloatScalar declared in org.diffkt.FloatScalar.Companion' type=org.diffkt.FloatScalar origin=null
+                      $this: GET_VAR 'val $_unnester_iv_0: org.diffkt.FloatScalar.Companion [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar.Companion origin=null
+                  VAR name:i2_local_2 type:org.diffkt.DScalar [val]
+                    CALL 'public final fun <get-primal> (): org.diffkt.DScalar declared in demo.target.targetReverseForward' type=org.diffkt.DScalar origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$_unnester_iv_1 type:org.diffkt.FloatScalar.Companion [val]
+                    GET_OBJECT 'CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Companion modality:FINAL visibility:public [companion] superTypes:[kotlin.Any]' type=org.diffkt.FloatScalar.Companion
+                  VAR name:$i1_derivative type:org.diffkt.FloatScalar [var]
+                    CALL 'public final fun <get-ZERO> (): org.diffkt.FloatScalar declared in org.diffkt.FloatScalar.Companion' type=org.diffkt.FloatScalar origin=null
+                      $this: GET_VAR 'val $_unnester_iv_1: org.diffkt.FloatScalar.Companion [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar.Companion origin=null
+                  VAR name:$_unnester_iv_2 type:org.diffkt.FloatScalar.Companion [val]
+                    GET_OBJECT 'CLASS IR_EXTERNAL_DECLARATION_STUB OBJECT name:Companion modality:FINAL visibility:public [companion] superTypes:[kotlin.Any]' type=org.diffkt.FloatScalar.Companion
+                  VAR name:$i0_derivative type:org.diffkt.FloatScalar [var]
+                    CALL 'public final fun <get-ZERO> (): org.diffkt.FloatScalar declared in org.diffkt.FloatScalar.Companion' type=org.diffkt.FloatScalar origin=null
+                      $this: GET_VAR 'val $_unnester_iv_2: org.diffkt.FloatScalar.Companion [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar.Companion origin=null
+                  VAR name:upstream type:org.diffkt.DTensor [val]
+                    CALL 'public final fun <get-upstream> (): org.diffkt.DTensor [fake_override] declared in demo.target.targetReverseUnboxed' type=org.diffkt.DTensor origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$_unnester_iv_39 type:org.diffkt.DTensor [val]
+                    CALL 'public final fun times (right: org.diffkt.DTensor): org.diffkt.DTensor [operator] declared in org.diffkt.TimesKt' type=org.diffkt.DTensor origin=MUL
+                      $receiver: GET_VAR 'val i1_local: org.diffkt.FloatScalar [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                      right: GET_VAR 'val upstream: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                  VAR name:$_unnester_iv_3 type:org.diffkt.DTensor [val]
+                    CALL 'public final fun plus (right: org.diffkt.DTensor): org.diffkt.DTensor [operator] declared in org.diffkt.PlusKt' type=org.diffkt.DTensor origin=null
+                      $receiver: GET_VAR 'val $_unnester_iv_39: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                      right: GET_VAR 'var $i1_derivative: org.diffkt.FloatScalar [var] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                  VAR name:$_unnester_iv_4 type:org.diffkt.DTensor [val]
+                    CALL 'public final fun plus (right: org.diffkt.DTensor): org.diffkt.DTensor [operator] declared in org.diffkt.PlusKt' type=org.diffkt.DTensor origin=null
+                      $receiver: GET_VAR 'val $_unnester_iv_39: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                      right: GET_VAR 'val $_unnester_iv_3: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                  SET_VAR 'var $i1_derivative: org.diffkt.FloatScalar [var] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                    GET_VAR 'val $_unnester_iv_4: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                  VAR name:$_unnester_iv_5 type:org.diffkt.DTensor [val]
+                    CALL 'public final fun plus (right: org.diffkt.DTensor): org.diffkt.DTensor [operator] declared in org.diffkt.PlusKt' type=org.diffkt.DTensor origin=null
+                      $receiver: GET_VAR 'var $i1_derivative: org.diffkt.FloatScalar [var] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                      right: GET_VAR 'var $i0_derivative: org.diffkt.FloatScalar [var] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                  VAR name:$_unnester_iv_6 type:org.diffkt.DTensor [val]
+                    CALL 'public final fun plus (right: org.diffkt.DTensor): org.diffkt.DTensor [operator] declared in org.diffkt.PlusKt' type=org.diffkt.DTensor origin=null
+                      $receiver: GET_VAR 'var $i1_derivative: org.diffkt.FloatScalar [var] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                      right: GET_VAR 'val $_unnester_iv_5: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                  SET_VAR 'var $i0_derivative: org.diffkt.FloatScalar [var] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                    GET_VAR 'val $_unnester_iv_6: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                  VAR name:c type:kotlin.Float [val]
+                    CALL 'public final fun <get-c> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$c_tangent type:kotlin.Float [var]
+                    CONST Float type=kotlin.Float value=0.0
+                  VAR name:$_unnester_iv_145 type:kotlin.Int [val]
+                    CONST Int type=kotlin.Int value=1
+                  VAR name:$_unnester_iv_146 type:kotlin.Float [val]
+                    CALL 'public final fun minus (other: kotlin.Int): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MINUS
+                      $this: GET_VAR 'val c: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      other: GET_VAR 'val $_unnester_iv_145: kotlin.Int [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Int origin=null
+                  VAR name:$_unnester_iv_147 type:org.diffkt.DScalar [val]
+                    CALL 'public final fun pow (x: kotlin.Float): org.diffkt.DScalar declared in org.diffkt.PowerKt' type=org.diffkt.DScalar origin=null
+                      $receiver: GET_VAR 'val a_local_1_primal: org.diffkt.DScalar [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DScalar origin=null
+                      x: GET_VAR 'val $_unnester_iv_146: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                  VAR name:$_unnester_iv_149 type:org.diffkt.DTensor [val]
+                    CALL 'public final fun expandToTangent (tangent: org.diffkt.DTensor): org.diffkt.DTensor declared in org.diffkt.UtilsKt' type=org.diffkt.DTensor origin=null
+                      $receiver: GET_VAR 'val $_unnester_iv_147: org.diffkt.DScalar [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DScalar origin=null
+                      tangent: GET_VAR 'var $i0_derivative: org.diffkt.FloatScalar [var] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                  VAR name:$_unnester_iv_150 type:org.diffkt.DTensor [val]
+                    CALL 'public final fun times (right: org.diffkt.DTensor): org.diffkt.DTensor [operator] declared in org.diffkt.TimesKt' type=org.diffkt.DTensor origin=MUL
+                      $receiver: GET_VAR 'val c: kotlin.Float [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Float origin=null
+                      right: GET_VAR 'val $_unnester_iv_149: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                  VAR name:$_unnester_iv_152 type:org.diffkt.DTensor [val]
+                    CALL 'public final fun times (that: org.diffkt.DTensor): org.diffkt.DTensor [operator] declared in org.diffkt.TimesKt' type=org.diffkt.DTensor origin=MUL
+                      $receiver: GET_VAR 'val $_unnester_iv_150: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                      that: GET_VAR 'var $i0_derivative: org.diffkt.FloatScalar [var] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                  VAR name:$_unnester_iv_7 type:org.diffkt.DTensor [val]
+                    CALL 'public final fun plus (right: org.diffkt.DTensor): org.diffkt.DTensor [operator] declared in org.diffkt.PlusKt' type=org.diffkt.DTensor origin=null
+                      $receiver: GET_VAR 'val $_unnester_iv_152: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                      right: GET_VAR 'var $a_derivative: org.diffkt.FloatScalar [var] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.FloatScalar origin=null
+                  SET_VAR 'var $a_derivative: org.diffkt.FloatScalar [var] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                    GET_VAR 'val $_unnester_iv_7: org.diffkt.DTensor [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.DTensor origin=null
+                  VAR name:$_unnester_iv_16 type:org.diffkt.reverse.ReverseScalar [val]
+                    CALL 'public final fun <get-aReverse> (): org.diffkt.reverse.ReverseScalar declared in demo.target.targetReverseForward' type=org.diffkt.reverse.ReverseScalar origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.backpropagate' type=demo.target.targetReverseForward origin=null
+                  VAR name:$_unnester_iv_22 type:kotlin.String [val]
+                    CONST String type=kotlin.String value="Expected no nested statements. Check the unnester for bugs"
+                  VAR name:$_unnester_iv_23 type:kotlin.Throwable [val]
+                    CONSTRUCTOR_CALL 'public constructor <init> (message: kotlin.String?) declared in kotlin.Throwable' type=kotlin.Throwable origin=null
+                      message: GET_VAR 'val $_unnester_iv_22: kotlin.String [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.String origin=null
+                  CALL 'public final fun pushback (upstream: org.diffkt.DTensor): kotlin.Unit [fake_override] declared in org.diffkt.reverse.ReverseScalar' type=kotlin.Unit origin=null
+                    $this: GET_VAR 'val $_unnester_iv_16: org.diffkt.reverse.ReverseScalar [val] declared in demo.target.targetReverseForward.backpropagate' type=org.diffkt.reverse.ReverseScalar origin=null
+                    upstream: THROW type=kotlin.Nothing
+                      GET_VAR 'val $_unnester_iv_23: kotlin.Throwable [val] declared in demo.target.targetReverseForward.backpropagate' type=kotlin.Throwable origin=null
+        PROPERTY name:aReverse visibility:public modality:FINAL [val]
+          FIELD name:aReverse type:org.diffkt.reverse.ReverseScalar visibility:private
+            EXPRESSION_BODY
+              GET_VAR 'aReverse: org.diffkt.reverse.ReverseScalar declared in demo.target.targetReverseForward.<init>' type=org.diffkt.reverse.ReverseScalar origin=null
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-aReverse> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:org.diffkt.reverse.ReverseScalar
+            correspondingProperty: PROPERTY name:aReverse visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-aReverse> (): org.diffkt.reverse.ReverseScalar declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:aReverse type:org.diffkt.reverse.ReverseScalar visibility:private' type=org.diffkt.reverse.ReverseScalar origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-aReverse>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:aForwardPrimal visibility:public modality:FINAL [val]
+          FIELD name:aForwardPrimal type:org.diffkt.forward.ForwardScalar visibility:private
+            EXPRESSION_BODY
+              GET_VAR 'aForwardPrimal: org.diffkt.forward.ForwardScalar declared in demo.target.targetReverseForward.<init>' type=org.diffkt.forward.ForwardScalar origin=null
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-aForwardPrimal> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:org.diffkt.forward.ForwardScalar
+            correspondingProperty: PROPERTY name:aForwardPrimal visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-aForwardPrimal> (): org.diffkt.forward.ForwardScalar declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:aForwardPrimal type:org.diffkt.forward.ForwardScalar visibility:private' type=org.diffkt.forward.ForwardScalar origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-aForwardPrimal>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:aPrimal visibility:public modality:FINAL [val]
+          FIELD name:aPrimal type:kotlin.Float visibility:private
+            EXPRESSION_BODY
+              GET_VAR 'aPrimal: kotlin.Float declared in demo.target.targetReverseForward.<init>' type=kotlin.Float origin=null
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-aPrimal> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:kotlin.Float
+            correspondingProperty: PROPERTY name:aPrimal visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-aPrimal> (): kotlin.Float declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:aPrimal type:kotlin.Float visibility:private' type=kotlin.Float origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-aPrimal>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:$decisions visibility:public modality:FINAL [val]
+          FIELD name:$decisions type:org.diffkt.adOptimize.CodeGenStack<kotlin.Int> visibility:private
+            EXPRESSION_BODY
+              CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in org.diffkt.adOptimize.CodeGenStack' type=org.diffkt.adOptimize.CodeGenStack<kotlin.Int> origin=null
+                <class: T>: kotlin.Int
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-$decisions> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:org.diffkt.adOptimize.CodeGenStack<kotlin.Int>
+            correspondingProperty: PROPERTY name:$decisions visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-$decisions> (): org.diffkt.adOptimize.CodeGenStack<kotlin.Int> declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:$decisions type:org.diffkt.adOptimize.CodeGenStack<kotlin.Int> visibility:private' type=org.diffkt.adOptimize.CodeGenStack<kotlin.Int> origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-$decisions>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:$intermediateValues visibility:public modality:FINAL [val]
+          FIELD name:$intermediateValues type:org.diffkt.adOptimize.CodeGenStack<kotlin.Any> visibility:private
+            EXPRESSION_BODY
+              CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in org.diffkt.adOptimize.CodeGenStack' type=org.diffkt.adOptimize.CodeGenStack<kotlin.Any> origin=null
+                <class: T>: kotlin.Any
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-$intermediateValues> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:org.diffkt.adOptimize.CodeGenStack<kotlin.Any>
+            correspondingProperty: PROPERTY name:$intermediateValues visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-$intermediateValues> (): org.diffkt.adOptimize.CodeGenStack<kotlin.Any> declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:$intermediateValues type:org.diffkt.adOptimize.CodeGenStack<kotlin.Any> visibility:private' type=org.diffkt.adOptimize.CodeGenStack<kotlin.Any> origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-$intermediateValues>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:primitivePrimal visibility:public modality:FINAL [val]
+          FIELD name:primitivePrimal type:kotlin.Float visibility:private
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-primitivePrimal> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:kotlin.Float
+            correspondingProperty: PROPERTY name:primitivePrimal visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-primitivePrimal> (): kotlin.Float declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:primitivePrimal type:kotlin.Float visibility:private' type=kotlin.Float origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-primitivePrimal>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:primal visibility:public modality:FINAL [val]
+          FIELD name:primal type:org.diffkt.DScalar visibility:private
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-primal> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:org.diffkt.DScalar
+            correspondingProperty: PROPERTY name:primal visibility:public modality:FINAL [val]
+            overridden:
+              public open fun <get-primal> (): org.diffkt.DScalar declared in org.diffkt.reverse.ReverseScalar
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-primal> (): org.diffkt.DScalar declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:primal type:org.diffkt.DScalar visibility:private' type=org.diffkt.DScalar origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-primal>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:c visibility:public modality:FINAL [val]
+          FIELD name:c type:kotlin.Float visibility:private
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-c> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:kotlin.Float
+            correspondingProperty: PROPERTY name:c visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-c> (): kotlin.Float declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:c type:kotlin.Float visibility:private' type=kotlin.Float origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-c>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:i0 visibility:public modality:FINAL [val]
+          FIELD name:i0 type:kotlin.Float visibility:private
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-i0> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:kotlin.Float
+            correspondingProperty: PROPERTY name:i0 visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-i0> (): kotlin.Float declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:i0 type:kotlin.Float visibility:private' type=kotlin.Float origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-i0>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:i1 visibility:public modality:FINAL [val]
+          FIELD name:i1 type:kotlin.Float visibility:private
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-i1> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:kotlin.Float
+            correspondingProperty: PROPERTY name:i1 visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-i1> (): kotlin.Float declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:i1 type:kotlin.Float visibility:private' type=kotlin.Float origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-i1>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:aPrimal_tangent visibility:public modality:FINAL [val]
+          FIELD name:aPrimal_tangent type:kotlin.Float visibility:private
+            EXPRESSION_BODY
+              CALL 'public final fun <get-value> (): kotlin.Float declared in org.diffkt.FloatScalar' type=kotlin.Float origin=GET_PROPERTY
+                $this: TYPE_OP type=org.diffkt.FloatScalar origin=CAST typeOperand=org.diffkt.FloatScalar
+                  CALL 'public open fun <get-tangent> (): org.diffkt.DTensor [fake_override] declared in org.diffkt.forward.ForwardScalar' type=org.diffkt.DTensor origin=GET_PROPERTY
+                    $this: CALL 'public final fun <get-aForwardPrimal> (): org.diffkt.forward.ForwardScalar declared in demo.target.targetReverseForward' type=org.diffkt.forward.ForwardScalar origin=GET_PROPERTY
+                      $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-aPrimal_tangent> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:kotlin.Float
+            correspondingProperty: PROPERTY name:aPrimal_tangent visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-aPrimal_tangent> (): kotlin.Float declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:aPrimal_tangent type:kotlin.Float visibility:private' type=kotlin.Float origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-aPrimal_tangent>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:$tangentsStack visibility:public modality:FINAL [val]
+          FIELD name:$tangentsStack type:org.diffkt.adOptimize.CodeGenStack<kotlin.Float> visibility:private
+            EXPRESSION_BODY
+              CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in org.diffkt.adOptimize.CodeGenStack' type=org.diffkt.adOptimize.CodeGenStack<kotlin.Float> origin=null
+                <class: T>: kotlin.Float
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-$tangentsStack> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:org.diffkt.adOptimize.CodeGenStack<kotlin.Float>
+            correspondingProperty: PROPERTY name:$tangentsStack visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-$tangentsStack> (): org.diffkt.adOptimize.CodeGenStack<kotlin.Float> declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:$tangentsStack type:org.diffkt.adOptimize.CodeGenStack<kotlin.Float> visibility:private' type=org.diffkt.adOptimize.CodeGenStack<kotlin.Float> origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-$tangentsStack>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:$i0_tangent visibility:public modality:FINAL [val]
+          FIELD name:$i0_tangent type:kotlin.Float visibility:private
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-$i0_tangent> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:kotlin.Float
+            correspondingProperty: PROPERTY name:$i0_tangent visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-$i0_tangent> (): kotlin.Float declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:$i0_tangent type:kotlin.Float visibility:private' type=kotlin.Float origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-$i0_tangent>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:$i1_tangent visibility:public modality:FINAL [val]
+          FIELD name:$i1_tangent type:kotlin.Float visibility:private
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-$i1_tangent> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:kotlin.Float
+            correspondingProperty: PROPERTY name:$i1_tangent visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-$i1_tangent> (): kotlin.Float declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:$i1_tangent type:kotlin.Float visibility:private' type=kotlin.Float origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-$i1_tangent>' type=demo.target.targetReverseForward origin=null
+        PROPERTY name:$i2_tangent visibility:public modality:FINAL [val]
+          FIELD name:$i2_tangent type:kotlin.Float visibility:private
+          FUN DEFAULT_PROPERTY_ACCESSOR name:<get-$i2_tangent> visibility:public modality:FINAL <> ($this:demo.target.targetReverseForward) returnType:kotlin.Float
+            correspondingProperty: PROPERTY name:$i2_tangent visibility:public modality:FINAL [val]
+            $this: VALUE_PARAMETER name:<this> type:demo.target.targetReverseForward
+            BLOCK_BODY
+              RETURN type=kotlin.Nothing from='public final fun <get-$i2_tangent> (): kotlin.Float declared in demo.target.targetReverseForward'
+                GET_FIELD 'FIELD name:$i2_tangent type:kotlin.Float visibility:private' type=kotlin.Float origin=null
+                  receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward.<get-$i2_tangent>' type=demo.target.targetReverseForward origin=null
+        ANONYMOUS_INITIALIZER isStatic=false
+          BLOCK_BODY
+            VAR name:$aNode type:kotlin.Float [val]
+              CALL 'public final fun <get-aPrimal> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+            VAR name:aPrimal_tangent type:kotlin.Float [val]
+              CALL 'public final fun <get-aPrimal_tangent> (): kotlin.Float declared in demo.target.targetReverseForward' type=kotlin.Float origin=GET_PROPERTY
+                $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+            VAR name:c type:kotlin.Float [val]
+              CONST Float type=kotlin.Float value=2.0
+            SET_FIELD 'FIELD name:c type:kotlin.Float visibility:private' type=kotlin.Unit origin=null
+              receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+              value: GET_VAR 'val c: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:i0 type:kotlin.Float [val]
+              CALL 'public final fun pow (x: kotlin.Float): kotlin.Float [inline] declared in kotlin.math.MathKt' type=kotlin.Float origin=null
+                $receiver: GET_VAR 'val $aNode: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+                x: GET_VAR 'val c: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:$_unnester_iv_145 type:kotlin.Int [val]
+              CONST Int type=kotlin.Int value=1
+            VAR name:$_unnester_iv_146 type:kotlin.Float [val]
+              CALL 'public final fun minus (other: kotlin.Int): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MINUS
+                $this: GET_VAR 'val c: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+                other: GET_VAR 'val $_unnester_iv_145: kotlin.Int [val] declared in demo.target.targetReverseForward' type=kotlin.Int origin=null
+            VAR name:$_unnester_iv_147 type:kotlin.Float [val]
+              CALL 'public final fun pow (x: kotlin.Float): kotlin.Float [inline] declared in kotlin.math.MathKt' type=kotlin.Float origin=null
+                $receiver: GET_VAR 'val $aNode: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+                x: GET_VAR 'val $_unnester_iv_146: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:$_unnester_iv_150 type:kotlin.Float [val]
+              CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                $this: GET_VAR 'val c: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+                other: GET_VAR 'val $_unnester_iv_147: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:$_unnester_iv_152 type:kotlin.Float [val]
+              CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                $this: GET_VAR 'val $_unnester_iv_150: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+                other: GET_VAR 'val aPrimal_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            SET_FIELD 'FIELD name:$i0_tangent type:kotlin.Float visibility:private' type=kotlin.Unit origin=null
+              receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+              value: GET_VAR 'val $_unnester_iv_152: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            SET_FIELD 'FIELD name:i0 type:kotlin.Float visibility:private' type=kotlin.Unit origin=null
+              receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+              value: GET_VAR 'val i0: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:i1 type:kotlin.Float [val]
+              CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                $this: GET_VAR 'val i0: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+                other: GET_VAR 'val i0: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:$i1_tangent type:kotlin.Float [val]
+              CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                $this: GET_VAR 'val $_unnester_iv_152: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+                other: GET_VAR 'val $_unnester_iv_152: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            SET_FIELD 'FIELD name:$i1_tangent type:kotlin.Float visibility:private' type=kotlin.Unit origin=null
+              receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+              value: GET_VAR 'val $i1_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            SET_FIELD 'FIELD name:i1 type:kotlin.Float visibility:private' type=kotlin.Unit origin=null
+              receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+              value: GET_VAR 'val i1: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:i2 type:kotlin.Float [val]
+              CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                $this: GET_VAR 'val i1: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+                other: GET_VAR 'val i1: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:$_unnester_iv_39 type:kotlin.Float [val]
+              CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                $this: GET_VAR 'val i1: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+                other: GET_VAR 'val $i1_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:$i2_tangent type:kotlin.Float [val]
+              CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                $this: GET_VAR 'val $_unnester_iv_39: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+                other: GET_VAR 'val $_unnester_iv_39: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            SET_FIELD 'FIELD name:$i2_tangent type:kotlin.Float visibility:private' type=kotlin.Unit origin=null
+              receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+              value: GET_VAR 'val $i2_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:$_unnester_iv_17 type:org.diffkt.FloatScalar [val]
+              CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Float) [primary] declared in org.diffkt.FloatScalar' type=org.diffkt.FloatScalar origin=null
+                value: GET_VAR 'val i2: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:$_unnester_iv_24 type:org.diffkt.forward.ForwardScalar [val]
+              CALL 'public final fun <get-aForwardPrimal> (): org.diffkt.forward.ForwardScalar declared in demo.target.targetReverseForward' type=org.diffkt.forward.ForwardScalar origin=GET_PROPERTY
+                $this: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+            VAR name:$_unnester_iv_25 type:org.diffkt.forward.ForwardDerivativeID [val]
+              CALL 'public open fun <get-derivativeID> (): org.diffkt.forward.ForwardDerivativeID [fake_override] declared in org.diffkt.forward.ForwardScalar' type=org.diffkt.forward.ForwardDerivativeID origin=GET_PROPERTY
+                $this: GET_VAR 'val $_unnester_iv_24: org.diffkt.forward.ForwardScalar [val] declared in demo.target.targetReverseForward' type=org.diffkt.forward.ForwardScalar origin=null
+            VAR name:$_unnester_iv_26 type:org.diffkt.FloatScalar [val]
+              CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Float) [primary] declared in org.diffkt.FloatScalar' type=org.diffkt.FloatScalar origin=null
+                value: GET_VAR 'val $i2_tangent: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+            VAR name:$_unnester_iv_27 type:org.diffkt.forward.ForwardScalar [val]
+              CONSTRUCTOR_CALL 'public constructor <init> (primal: org.diffkt.DScalar, derivativeID: org.diffkt.forward.ForwardDerivativeID, tangent: org.diffkt.DTensor) declared in org.diffkt.forward.ForwardScalar' type=org.diffkt.forward.ForwardScalar origin=null
+                primal: GET_VAR 'val $_unnester_iv_17: org.diffkt.FloatScalar [val] declared in demo.target.targetReverseForward' type=org.diffkt.FloatScalar origin=null
+                derivativeID: GET_VAR 'val $_unnester_iv_25: org.diffkt.forward.ForwardDerivativeID [val] declared in demo.target.targetReverseForward' type=org.diffkt.forward.ForwardDerivativeID origin=null
+                tangent: GET_VAR 'val $_unnester_iv_26: org.diffkt.FloatScalar [val] declared in demo.target.targetReverseForward' type=org.diffkt.FloatScalar origin=null
+            SET_FIELD 'FIELD name:primal type:org.diffkt.DScalar visibility:private' type=kotlin.Unit origin=null
+              receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+              value: GET_VAR 'val $_unnester_iv_27: org.diffkt.forward.ForwardScalar [val] declared in demo.target.targetReverseForward' type=org.diffkt.forward.ForwardScalar origin=null
+            SET_FIELD 'FIELD name:primitivePrimal type:kotlin.Float visibility:private' type=kotlin.Unit origin=null
+              receiver: GET_VAR '<this>: demo.target.targetReverseForward declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+              value: GET_VAR 'val i2: kotlin.Float [val] declared in demo.target.targetReverseForward' type=kotlin.Float origin=null
+      RETURN type=kotlin.Nothing from='public final fun target (a: org.diffkt.DScalar): org.diffkt.DScalar declared in demo'
+        WHEN type=org.diffkt.DScalar origin=null
+          BRANCH
+            if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=org.diffkt.reverse.ReverseScalar
+              GET_VAR 'a: org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+            then: BLOCK type=org.diffkt.DScalar origin=null
+              WHEN type=org.diffkt.DScalar origin=null
+                BRANCH
+                  if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=org.diffkt.forward.ForwardScalar
+                    CALL 'public abstract fun <get-primal> (): org.diffkt.DScalar declared in org.diffkt.DScalar' type=org.diffkt.DScalar origin=GET_PROPERTY
+                      $this: GET_VAR 'a: org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+                  then: BLOCK type=org.diffkt.DScalar origin=null
+                    WHEN type=org.diffkt.DScalar origin=null
+                      BRANCH
+                        if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=org.diffkt.FloatScalar
+                          CALL 'public abstract fun <get-primal> (): org.diffkt.DScalar declared in org.diffkt.DScalar' type=org.diffkt.DScalar origin=GET_PROPERTY
+                            $this: CALL 'public abstract fun <get-primal> (): org.diffkt.DScalar declared in org.diffkt.DScalar' type=org.diffkt.DScalar origin=GET_PROPERTY
+                              $this: GET_VAR 'a: org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+                        then: BLOCK type=org.diffkt.DScalar origin=null
+                          CONSTRUCTOR_CALL 'public constructor <init> (aReverse: org.diffkt.reverse.ReverseScalar, aForwardPrimal: org.diffkt.forward.ForwardScalar, aPrimal: kotlin.Float) [primary] declared in demo.target.targetReverseForward' type=demo.target.targetReverseForward origin=null
+                            aReverse: TYPE_OP type=org.diffkt.reverse.ReverseScalar origin=CAST typeOperand=org.diffkt.reverse.ReverseScalar
+                              GET_VAR 'a: org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+                            aForwardPrimal: TYPE_OP type=org.diffkt.forward.ForwardScalar origin=CAST typeOperand=org.diffkt.forward.ForwardScalar
+                              CALL 'public abstract fun <get-primal> (): org.diffkt.DScalar declared in org.diffkt.DScalar' type=org.diffkt.DScalar origin=GET_PROPERTY
+                                $this: GET_VAR 'a: org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+                            aPrimal: CALL 'public final fun <get-value> (): kotlin.Float declared in org.diffkt.FloatScalar' type=kotlin.Float origin=GET_PROPERTY
+                              $this: TYPE_OP type=org.diffkt.FloatScalar origin=CAST typeOperand=org.diffkt.FloatScalar
+                                CALL 'public abstract fun <get-primal> (): org.diffkt.DScalar declared in org.diffkt.DScalar' type=org.diffkt.DScalar origin=GET_PROPERTY
+                                  $this: CALL 'public abstract fun <get-primal> (): org.diffkt.DScalar declared in org.diffkt.DScalar' type=org.diffkt.DScalar origin=GET_PROPERTY
+                                    $this: GET_VAR 'a: org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+                      BRANCH
+                        if: CONST Boolean type=kotlin.Boolean value=true
+                        then: BLOCK type=org.diffkt.DScalar origin=null
+                          CALL 'local final fun <anonymous> (): org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+                BRANCH
+                  if: CONST Boolean type=kotlin.Boolean value=true
+                  then: BLOCK type=org.diffkt.DScalar origin=null
+                    CALL 'local final fun <anonymous> (): org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+          BRANCH
+            if: TYPE_OP type=kotlin.Boolean origin=INSTANCEOF typeOperand=org.diffkt.FloatScalar
+              GET_VAR 'a: org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+            then: BLOCK type=org.diffkt.DScalar origin=null
+              VAR name:$a type:kotlin.Float [val]
+                CALL 'public final fun <get-value> (): kotlin.Float declared in org.diffkt.FloatScalar' type=kotlin.Float origin=GET_PROPERTY
+                  $this: TYPE_OP type=org.diffkt.FloatScalar origin=CAST typeOperand=org.diffkt.FloatScalar
+                    GET_VAR 'a: org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null
+              VAR name:c type:kotlin.Float [val]
+                CONST Float type=kotlin.Float value=2.0
+              VAR name:i0 type:kotlin.Float [val]
+                CALL 'public final fun pow (x: kotlin.Float): kotlin.Float [inline] declared in kotlin.math.MathKt' type=kotlin.Float origin=null
+                  $receiver: GET_VAR 'val $a: kotlin.Float [val] declared in demo.target' type=kotlin.Float origin=null
+                  x: GET_VAR 'val c: kotlin.Float [val] declared in demo.target' type=kotlin.Float origin=null
+              VAR name:i1 type:kotlin.Float [val]
+                CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                  $this: GET_VAR 'val i0: kotlin.Float [val] declared in demo.target' type=kotlin.Float origin=null
+                  other: GET_VAR 'val i0: kotlin.Float [val] declared in demo.target' type=kotlin.Float origin=null
+              VAR name:i2 type:kotlin.Float [val]
+                CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+                  $this: GET_VAR 'val i1: kotlin.Float [val] declared in demo.target' type=kotlin.Float origin=null
+                  other: GET_VAR 'val i1: kotlin.Float [val] declared in demo.target' type=kotlin.Float origin=null
+              CONSTRUCTOR_CALL 'public constructor <init> (value: kotlin.Float) [primary] declared in org.diffkt.FloatScalar' type=org.diffkt.FloatScalar origin=null
+                value: GET_VAR 'val i2: kotlin.Float [val] declared in demo.target' type=kotlin.Float origin=null
+          BRANCH
+            if: CONST Boolean type=kotlin.Boolean value=true
+            then: BLOCK type=org.diffkt.DScalar origin=null
+              CALL 'local final fun <anonymous> (): org.diffkt.DScalar declared in demo.target' type=org.diffkt.DScalar origin=null

@@ -1,0 +1,65 @@
+name: Test and Publish
+on:
+  push:
+    branches:
+      main
+  pull_request:
+    branches:
+      main
+jobs:
+  testPublish:
+    runs-on: macos-11
+    permissions:
+      contents: read
+      packages: write
+    steps:
+      - name: set up jdk 8
+        uses: actions/setup-java@v2
+        with:
+          java-version: '8'
+          distribution: 'adopt'
+      - name: install diffkt dependencies
+        run: |
+          /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+          brew install onednn
+          brew install libomp
+      - uses: actions/checkout@v2
+      - name: test
+        run: ./gradlew integrationTests
+        env:
+          GITHUB_TOKEN: ${{ secrets.FBTOKEN }}
+      - name: upload ad test results
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: adOptimizeTestHtml
+          path: ./**/adoptimize-integration-tests/build/reports/tests/test/
+      - name: upload diffPrep test results
+        uses: actions/upload-artifact@v2
+        if: always()
+        with:
+          name: diffPrepTestHtml
+          path: ./**/differentiable-api-preprocessor-integration-tests/build/reports/tests/test/
+      - name: client tests
+        run: |
+          ./gradlew publishToMavenLocal
+          pushd adOptimizeClient
+          ./gradlew run
+          popd
+        env:
+          GITHUB_TOKEN: ${{ secrets.FBTOKEN }}
+      - name: consumer producer tests
+        run: |
+          ./gradlew publishToMavenLocal
+          pushd producer-consumer
+          ./gradlew :producer:publishToMavenLocal
+          ./gradlew :consumer:run
+          popd
+        env:
+          GITHUB_TOKEN: ${{ secrets.FBTOKEN }}
+      - name: publish
+        if: success()
+        run: ./gradlew publish -Pgroup=org.diffkt.adoptimize -Pversion=0.1.0-$(git rev-parse --short HEAD)
+        env:
+          GITHUB_ACTOR: ${{ secrets.DIFFKT_ACTOR }}
+          GITHUB_TOKEN: ${{ secrets.DIFFKT_TOKEN }}

@@ -1,0 +1,105 @@
+FILE fqName:demo fileName:/floatFunction.kt
+  CLASS ANNOTATION_CLASS name:Optimize modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.Optimize
+    CONSTRUCTOR visibility:public <> () returnType:demo.Optimize [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:Optimize modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  CLASS ANNOTATION_CLASS name:ReverseAD modality:OPEN visibility:public superTypes:[kotlin.Annotation]
+    $this: VALUE_PARAMETER INSTANCE_RECEIVER name:<this> type:demo.ReverseAD
+    CONSTRUCTOR visibility:public <> () returnType:demo.ReverseAD [primary]
+      BLOCK_BODY
+        DELEGATING_CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in kotlin.Any'
+        INSTANCE_INITIALIZER_CALL classDescriptor='CLASS ANNOTATION_CLASS name:ReverseAD modality:OPEN visibility:public superTypes:[kotlin.Annotation]'
+    FUN FAKE_OVERRIDE name:equals visibility:public modality:OPEN <> ($this:kotlin.Any, other:kotlin.Any?) returnType:kotlin.Boolean [fake_override,operator]
+      overridden:
+        public open fun equals (other: kotlin.Any?): kotlin.Boolean [fake_override,operator] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+      VALUE_PARAMETER name:other index:0 type:kotlin.Any?
+    FUN FAKE_OVERRIDE name:hashCode visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.Int [fake_override]
+      overridden:
+        public open fun hashCode (): kotlin.Int [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+    FUN FAKE_OVERRIDE name:toString visibility:public modality:OPEN <> ($this:kotlin.Any) returnType:kotlin.String [fake_override]
+      overridden:
+        public open fun toString (): kotlin.String [fake_override] declared in kotlin.Annotation
+      $this: VALUE_PARAMETER name:<this> type:kotlin.Any
+  FUN name:foo visibility:public modality:FINAL <> (a:kotlin.Float) returnType:kotlin.Float
+    annotations:
+      Optimize
+    VALUE_PARAMETER name:a index:0 type:kotlin.Float
+    BLOCK_BODY
+      VAR name:$_unnester_iv_0 type:kotlin.Float [val]
+        CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MUL
+          $this: GET_VAR 'a: kotlin.Float declared in demo.foo' type=kotlin.Float origin=null
+          other: GET_VAR 'a: kotlin.Float declared in demo.foo' type=kotlin.Float origin=null
+      RETURN type=kotlin.Nothing from='public final fun foo (a: kotlin.Float): kotlin.Float declared in demo'
+        GET_VAR 'val $_unnester_iv_0: kotlin.Float [val] declared in demo.foo' type=kotlin.Float origin=null
+  FUN name:jacobian_transposed_vector_product visibility:public modality:FINAL <> (x:kotlin.Float, f:kotlin.Function1<kotlin.Float, kotlin.Float>) returnType:kotlin.Float
+    annotations:
+      ReverseAD
+    VALUE_PARAMETER name:x index:0 type:kotlin.Float
+    VALUE_PARAMETER name:f index:1 type:kotlin.Function1<kotlin.Float, kotlin.Float>
+    BLOCK_BODY
+      CALL 'public final fun TODO (): kotlin.Nothing [inline] declared in kotlin.StandardKt' type=kotlin.Nothing origin=null
+  FUN name:box visibility:public modality:FINAL <> () returnType:kotlin.Unit
+    BLOCK_BODY
+      VAR name:derivative type:kotlin.Float [val]
+        CALL 'public final fun fooPB (a: kotlin.Float, upstream: kotlin.Float): kotlin.Float declared in demo' type=kotlin.Float origin=null
+          a: CONST Float type=kotlin.Float value=2.15
+          upstream: CONST Float type=kotlin.Float value=1.0
+  FUN name:fooPB visibility:public modality:FINAL <> (a:kotlin.Float, upstream:kotlin.Float) returnType:kotlin.Float
+    VALUE_PARAMETER name:a index:0 type:kotlin.Float
+    VALUE_PARAMETER name:upstream index:1 type:kotlin.Float
+    BLOCK_BODY
+      VAR name:$intermediateValues type:org.diffkt.adOptimize.CodeGenStack<kotlin.Any> [val]
+        CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in org.diffkt.adOptimize.CodeGenStack' type=org.diffkt.adOptimize.CodeGenStack<kotlin.Any> origin=null
+          <class: T>: kotlin.Any
+      VAR name:$decisions type:org.diffkt.adOptimize.CodeGenStack<kotlin.Int> [val]
+        CONSTRUCTOR_CALL 'public constructor <init> () [primary] declared in org.diffkt.adOptimize.CodeGenStack' type=org.diffkt.adOptimize.CodeGenStack<kotlin.Int> origin=null
+          <class: T>: kotlin.Int
+      VAR name:$_unnester_iv_0 type:kotlin.Float [val]
+        CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=MUL
+          $this: GET_VAR 'a: kotlin.Float declared in demo.fooPB' type=kotlin.Float origin=null
+          other: GET_VAR 'a: kotlin.Float declared in demo.fooPB' type=kotlin.Float origin=null
+      VAR name:$a_derivative type:kotlin.Float [var]
+        CONST Float type=kotlin.Float value=0.0
+      VAR name:upstream type:kotlin.Float [val]
+        GET_VAR 'upstream: kotlin.Float declared in demo.fooPB' type=kotlin.Float origin=null
+      VAR name:$_unnester_iv_36 type:kotlin.Float [val]
+        GET_VAR 'a: kotlin.Float declared in demo.fooPB' type=kotlin.Float origin=null
+      VAR name:$_unnester_iv_37 type:kotlin.Float [val]
+        GET_VAR 'val $_unnester_iv_36: kotlin.Float [val] declared in demo.fooPB' type=kotlin.Float origin=null
+      VAR name:$_unnester_iv_39 type:kotlin.Float [val]
+        CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+          $this: GET_VAR 'val $_unnester_iv_37: kotlin.Float [val] declared in demo.fooPB' type=kotlin.Float origin=null
+          other: GET_VAR 'val upstream: kotlin.Float [val] declared in demo.fooPB' type=kotlin.Float origin=null
+      VAR name:$_unnester_iv_41 type:kotlin.Float [val]
+        GET_VAR 'a: kotlin.Float declared in demo.fooPB' type=kotlin.Float origin=null
+      VAR name:$_unnester_iv_42 type:kotlin.Float [val]
+        GET_VAR 'val $_unnester_iv_41: kotlin.Float [val] declared in demo.fooPB' type=kotlin.Float origin=null
+      VAR name:$_unnester_iv_44 type:kotlin.Float [val]
+        CALL 'public final fun times (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+          $this: GET_VAR 'val $_unnester_iv_42: kotlin.Float [val] declared in demo.fooPB' type=kotlin.Float origin=null
+          other: GET_VAR 'val upstream: kotlin.Float [val] declared in demo.fooPB' type=kotlin.Float origin=null
+      SET_VAR 'var $a_derivative: kotlin.Float [var] declared in demo.fooPB' type=kotlin.Unit origin=null
+        CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+          $receiver: GET_VAR 'val $_unnester_iv_44: kotlin.Float [val] declared in demo.fooPB' type=kotlin.Float origin=null
+          other: CALL 'public final fun plus (other: kotlin.Float): kotlin.Float [operator] declared in kotlin.Float' type=kotlin.Float origin=null
+            $receiver: GET_VAR 'val $_unnester_iv_39: kotlin.Float [val] declared in demo.fooPB' type=kotlin.Float origin=null
+            other: GET_VAR 'var $a_derivative: kotlin.Float [var] declared in demo.fooPB' type=kotlin.Float origin=null
+      RETURN type=kotlin.Float from='public final fun fooPB (a: kotlin.Float, upstream: kotlin.Float): kotlin.Float declared in demo'
+        GET_VAR 'var $a_derivative: kotlin.Float [var] declared in demo.fooPB' type=kotlin.Float origin=null

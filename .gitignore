@@ -1,0 +1,27 @@
+.DS_Store
+github.env
+*.jar
+hs_err_pid*
+gradle-app.setting
+!gradle-wrapper.jar
+
+
+# ignore Gradle project-specific cache directory
+.gradle
+
+# Ignore Gradle build output directory
+build
+
+.idea
+
+out
+
+# Ignore kotlin test
+.kotlintest
+
+# ignore the dist that is populated by build
+dist
+
+# ignore test build directories
+adoptimize-integration-tests/testDependencies/*
+bmgoptimize-integration-tests/testDependencies/*
