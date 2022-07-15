@@ -59,7 +59,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.FBTOKEN }}
       - name: publish
         if: success()
-        run: ./gradlew publish -Pgroup=org.diffkt.adoptimize -Pversion=0.1.0-$(git rev-parse --short HEAD)
+        run: ./gradlew publish -Pgroup=org.diffkt.adoptimize -Pversion=0.1.1-$(git rev-parse --short HEAD)
         env:
           GITHUB_ACTOR: ${{ secrets.DIFFKT_ACTOR }}
           GITHUB_TOKEN: ${{ secrets.DIFFKT_TOKEN }}
